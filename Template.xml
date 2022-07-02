@@ -413,7 +413,7 @@
 					<b:widget-settings>
 						<b:widget-setting name='content'><![CDATA[						
 const safeLinkConfig = {
-	secretKey: 'iE!)#)$%%;;D',
+	secretKey: 'rahasia:v',
 	parameterName: 'f',
 	countDownTimer: 5
 };
@@ -483,7 +483,7 @@ const safeLinkConfig = {
 			$("#autosafelink").on("shown.bs.modal", function(){
 				$("#autosafelinkCode").text(`<script>const autoSafeLink = {
 	linkException: 'google.com,twitter.com,javascript:;,mailto:',
-	onlyThisLink: 'google.com', // when this value is empty, will replace all link and ignore exception
+	onlyThisLink: '', // when this value is empty, will replace all link and ignore exception
 	safeLinkConfig: {
 		blogId: '${blogId}',
 		secretKey: '${safeLinkConfig.secretKey}',
@@ -491,7 +491,7 @@ const safeLinkConfig = {
 	}
 }; 	
 </scr${'i'}pt>
-<script src="https://cdn.jsdelivr.net/gh/kurteyki/SafePlatinum@26feb307df9982b96a72dede0105b591d71b61cb/autosafelink.js"></scr${'i'}pt>`);
+<script src="https://cdn.jsdelivr.net/gh/kurteyki/SafePlatinum@775fa8aada682f7ee9f028c3f985171bc4d0bd24/autosafelink.js"></scr${'i'}pt>`);
 			})
 			//]]>			
 		</script>	
@@ -510,7 +510,7 @@ const safeLinkConfig = {
 					<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0-beta1/css/bootstrap.min.css" integrity="sha512-o/MhoRPVLExxZjCFVBsm17Pkztkzmh7Dp8k7/3JrtNCHh0AQ489kwpfA3dPSHzKDe8YCuEhxXq3Y71eb/o6amg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 					<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.3/font/bootstrap-icons.min.css" integrity="sha512-YzwGgFdO1NQw1CZkPoGyRkEnUTxPSbGWXvGiXrWk8IeSqdyci0dEDYdLLjMxq1zCoU0QBa4kHAFiRhUL3z2bow==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-					<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kurteyki/SafePlatinum@26feb307df9982b96a72dede0105b591d71b61cb/app.css" />
+					<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kurteyki/SafePlatinum@775fa8aada682f7ee9f028c3f985171bc4d0bd24/app.css" />
 				</b:includable>
 				<b:includable id='jsx'>
 					<b:comment>insert js external here</b:comment>	
@@ -518,15 +518,15 @@ const safeLinkConfig = {
 					<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>		
 					<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-					<script src="https://cdn.jsdelivr.net/gh/kurteyki/SafePlatinum@26feb307df9982b96a72dede0105b591d71b61cb/app.js"></script>
+					<script src="https://cdn.jsdelivr.net/gh/kurteyki/SafePlatinum@775fa8aada682f7ee9f028c3f985171bc4d0bd24/app.js"></script>
 
 				</b:includable>	
 				<b:includable id='jsh'>		
-					<script src="https://cdn.jsdelivr.net/gh/kurteyki/SafePlatinum@26feb307df9982b96a72dede0105b591d71b61cb/app-h.js"></script>
+					<script src="https://cdn.jsdelivr.net/gh/kurteyki/SafePlatinum@775fa8aada682f7ee9f028c3f985171bc4d0bd24/app-h.js"></script>
 				</b:includable>
 				<b:includable id='jsp'>	
-					<script src="https://cdn.jsdelivr.net/gh/kurteyki/SafePlatinum@26feb307df9982b96a72dede0105b591d71b61cb/jquery-countdown360.js"></script>
-					<script src="https://cdn.jsdelivr.net/gh/kurteyki/SafePlatinum@26feb307df9982b96a72dede0105b591d71b61cb/app-p.js"></script>
+					<script src="https://cdn.jsdelivr.net/gh/kurteyki/SafePlatinum@775fa8aada682f7ee9f028c3f985171bc4d0bd24/jquery-countdown360.js"></script>
+					<script src="https://cdn.jsdelivr.net/gh/kurteyki/SafePlatinum@775fa8aada682f7ee9f028c3f985171bc4d0bd24/app-p.js"></script>
 				</b:includable>				
 			</b:defaultmarkup>			
 		</b:defaultmarkups>			
