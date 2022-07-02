@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html class='h-100' b:css='false' b:js='true' b:defaultwidgetversion='2' b:layoutsVersion='3' b:responsive='true' b:templateUrl='SafePlatinum.xml' b:templateVersion='1.0' expr:dir='data:blog.languageDirection' expr:lang='data:blog.locale'>
+
+<b:comment>Always remove Inject attribute with b:attr</b:comment>
+<b:attr name='xmlns' value=''/>
+<b:attr name='xmlns:b' value=''/>
+<b:attr name='xmlns:expr' value=''/>
+<b:attr name='xmlns:data' value=''/>	
+&lt;!--<head>--&gt;&lt;head&gt;
+
+	<b:comment>Browser Data</b:comment>
+	<meta expr:charset="data:blog.encoding"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<b:comment>Favicon</b:comment>
+	<link expr:href='data:blog.blogspotFaviconUrl' rel='icon' type='image/x-icon'/>
+	<b:if cond='data:widgets'>
+		<b:comment>Browser Mobile Navbar Color</b:comment>
+		<meta expr:content='data:skin.vars.mainColor' name='theme-color'/>
+		<meta expr:content='data:skin.vars.mainColor' name='msapplication-navbutton-color'/>
+	</b:if>
+
+	<b:comment>SEO Title</b:comment>
+	<b:if cond='data:view.isHomepage'>
+		<b:comment>Homepage</b:comment>
+		<title><data:blog.title.escaped/></title>
+		<b:elseif cond='data:view.isSingleItem'/>
+		<b:comment>Post / Pages</b:comment>
+		<title><data:blog.pageName.escaped/></title>			
+		<b:elseif cond='data:view.isSearch'/>
+		<b:if cond='data:view.search.query'>
+			<b:comment>Search Query</b:comment>
+			<title><data:blog.pageName.escaped/></title>
+			<b:elseif cond='data:view.search.label'/>
+			<b:comment>Search Label</b:comment>
+			<title><data:blog.pageName.escaped/></title>
+			<b:else/>
+			<b:comment>Search Index</b:comment>
+			<title><data:blog.title.escaped/></title>
+		</b:if>
+		<b:elseif cond='data:view.isArchive'/>
+		<b:comment>Archive</b:comment>
+		<title><data:blog.pageName.escaped/></title>
+		<b:elseif cond='data:view.isError'/>
+		<b:comment>404</b:comment>
+		<title> 404 | Page Not Found </title> 
+	</b:if>
+
+	<b:comment>SEO Description</b:comment>
+	<b:if cond='data:blog.metaDescription'>
+		<meta expr:content='data:blog.metaDescription' name='description'/>
+	</b:if>
+
+	<b:comment>Canonical URL</b:comment>
+	<b:if cond='data:view.isSearch AND not data:view.search.query AND not data:view.search.label'>
+		<b:comment>Canonical for Pagination Homepage</b:comment>
+		<link expr:href='data:blog.canonicalHomepageUrl' rel='canonical'/>
+		<b:else/>
+		<link expr:href='data:blog.url.canonical' rel='canonical'/>
+	</b:if>
+
+	<b:comment>Block SE Robots on Page [Search Query / Label, Archive]</b:comment>
+	<b:if cond='data:view.search.query OR data:view.search.label OR data:view.isArchive'>
+		<meta content='noindex,nofollow' name='robots'/>
+	</b:if>		
+
+	<b:comment>Blog Feeds</b:comment>
+	<data:blog.feedLinks/>
+
+	<b:comment>Meta OpenGraph</b:comment>
+	<b:include name='openGraphMetaData'/>
+
+	<b:comment>Blog restricted Age</b:comment>
+	<b:if cond='data:blog.adultContent'>
+		<meta content='adult' name='rating'/>
+	</b:if>
+
+	<b:comment>CSS External</b:comment>
+	<b:include name='cssx'/>
+
+	<b:skin><![CDATA[ 
+		/*
+		<Group description="Main">
+			<Variable name="mainColor" description="MainColor" type="color" default="#FFFFFF" hideEditor="false"  value="#FFFFFF"/>
+		</Group>
+		*/
+		]]>
+	</b:skin>
+	<b:if cond='data:view.isLayoutMode'>
+		<b:template-skin>
+			<![CDATA[
+			body#layout {min-width:768px;padding:100px 20px 0 !important;}
+			body#layout .hidden, body#layout .invisible {display: inherit;}
+			body#layout::before {
+				content: "SafePlatinum";
+				position: absolute;
+				top: 20px;
+				right: 27px;
+				padding: 14px 22px;
+				font-family: monospace;
+				font-size: 18px;
+				color: #3f51b5;
+				background: #c8e7ff;
+				border-radius: 2px 4px;
+				border: 1px solid #3f51b5;
+			}
+			]]>
+		</b:template-skin>
+	</b:if>
+
+	<b:comment>CSS Internal</b:comment>
+	<style type="text/css">
+		.form-control:focus{box-shadow: none;}
+
+		/* ads */
+		.ads-square{width:300px;height:250px;background:#428bca;color:#fff;line-height:250px;text-align:center;margin:auto}
+		.ads-horizontal{width:100%;height:90px;background:#428bca;color:#fff;line-height:90px;text-align:center}
+	</style>
+
+	<b:comment>Google Analytics</b:comment>
+	<b:include data='blog' name='google-analytics'/>	
+
+&lt;!--</head>--&gt;&lt;/head&gt;
+<body class="d-flex flex-column h-100">
+
+	<main class="d-flex flex-column h-100">
+
+		<b:comment>banner download</b:comment>
+		<b:section showaddelement='false' id='WidgetTop'>
+			<b:widget id='HTML1' locked='true' title='Banner Download' type='HTML' visible='true'>
+				<b:widget-settings>
+					<b:widget-setting name='content'><![CDATA[
+						<a class="d-flex bg-warning text-dark fw-bold py-2 text-center text-decoration-none justify-content-center" href="">
+							<i class="bi bi-github"></i> Download this Safelink
+						</a>
+						]]>
+					</b:widget-setting>
+				</b:widget-settings>
+				<b:includable id='main'>
+					<data:content/>
+				</b:includable>
+			</b:widget>
+			<b:widget id='PageList1' locked='true' title='PageList' type='PageList' visible='true'>
+				<b:widget-settings>
+					<b:widget-setting name='pageListJson'><![CDATA[{"link0":{"href":"https://safeplatinum.blogspot.com/","position":0,"title":"Home"},"4858526422275444464":{"href":"https://safeplatinum.blogspot.com/p/site-issue-report.html","position":4,"title":"Site Issue Report"},"8419652509049181409":{"href":"https://safeplatinum.blogspot.com/p/terms-and-conditions.html","position":3,"title":"TOS"},"225901037041030665":{"href":"https://safeplatinum.blogspot.com/p/privacy-policy.html","position":1,"title":"Privacy Policy"},"7933860274618073716":{"href":"https://safeplatinum.blogspot.com/p/welcome-to-disclaimers-page.html","position":2,"title":"Disclaimers"}}]]></b:widget-setting>
+						<b:widget-setting name='homeTitle'>Home</b:widget-setting>
+					</b:widget-settings>
+					<b:includable id='main'>
+
+						<nav class="py-2 bg-light border-bottom">
+							<div class="container d-flex justify-content-center">
+								<ul class="nav">							
+									<b:loop values='data:links' var='link'>
+										<li class="nav-item">
+											<a class="nav-link link-dark px-2" expr:href='data:link.href'><data:link.title/></a>
+										</li>
+									</b:loop>
+
+									<li class="nav-item">
+										<a class="nav-link link-dark px-2" href='javascript:;' data-bs-toggle="modal" data-bs-target="#autosafelink">Auto Safelink</a>
+									</li>
+								</ul>
+							</div>
+						</nav>
+
+						<!-- modal autosafelink -->
+						<div class="modal fade" id="autosafelink" tabindex="-1" aria-labelledby="autosafelinkLabel" aria-hidden="true">
+							<div class="modal-dialog modal-dialog-centered">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="autosafelinkLabel">Auto Safelink Script</h5>
+										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										<p>
+											Insert this script for you main Blog
+										</p>
+
+										<div class="my-4 border p-3">
+											<code class="user-select-all">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+												quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+												consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+												cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+											proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</code>
+										</div>
+
+										<p class="alert alert-info">
+											script will replace all link from your main blog go to this safelink
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</b:includable>
+					<b:includable id='content'/>
+					<b:includable id='overflowButton'/>
+					<b:includable id='overflowablePageList'/>
+					<b:includable id='pageLink'/>
+					<b:includable id='pageList'/>
+				</b:widget>			
+			</b:section>
+
+			<b:comment>main homepage</b:comment>
+			<b:if cond='data:view.isHomepage'>
+
+				<section class="container d-flex flex-column h-100">
+					<div class="row justify-content-center my-auto">
+						<div class="col-12 col-md-7">
+							<div class="card shadow-sm">
+								<div class="card-header border-0 bg-white p-3 text-center">
+									<h1 class="fs-2 mb-0">
+										<data:blog.title/>
+									</h1>
+									<b:if cond='data:blog.metaDescription'>
+										<p class="m-0"><data:blog.metaDescription/></p>
+									</b:if>
+								</div>
+								<div class="card-body pt-0">
+									<form id="form-safelink">
+										<div class="input-group mb-3">
+											<span class="input-group-text">
+												<i class="bi bi-globe"></i>
+											</span>
+
+											<input name='url' required="" class='form-control' expr:placeholder='data:blog.homepageUrl' type='url'/>
+
+											<span class="input-group-text p-0">
+												<button class='btn btn-primary rounded-0' type='submit'>
+													<i class='fa fa-shield'>
+													</i>
+													<strong>Generate</strong>
+												</button>
+											</span>
+										</div>
+										<div id="result-safelink"></div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>								
+				</section>
+
+			</b:if>		
+
+			<b:comment>main single</b:comment>
+			<b:if cond='data:view.isSingleItem OR data:view.isLayoutMode'>
+				<b:section showaddelement='true' id="BlogWidget">
+					<b:widget cond='data:view.isPost' id='HTML2' locked='true' title='Ads Top' type='HTML' visible='true'>
+						<b:widget-settings>
+							<b:widget-setting name='content'><![CDATA[
+								ads here
+								]]>
+							</b:widget-setting>
+						</b:widget-settings>
+						<b:includable id='main'>
+							<section class="container mt-3">
+								<div class="row justify-content-center">
+									<div class="col-12 col-md-7">
+										<div class="ads-horizontal">
+											<data:content/>
+										</div>
+									</div>
+								</div>
+							</section>
+						</b:includable>
+					</b:widget>
+					<b:widget id='Blog1' locked='true' title='Blog Widget' type='Blog' version='2' visible='true'>
+						<b:widget-settings>
+							<b:widget-setting name='showDateHeader'>false</b:widget-setting>
+							<b:widget-setting name='style.textcolor'>#ffffff</b:widget-setting>
+							<b:widget-setting name='showShareButtons'>true</b:widget-setting>
+							<b:widget-setting name='showCommentLink'>true</b:widget-setting>
+							<b:widget-setting name='style.urlcolor'>#ffffff</b:widget-setting>
+							<b:widget-setting name='showAuthor'>true</b:widget-setting>
+							<b:widget-setting name='style.linkcolor'>#ffffff</b:widget-setting>
+							<b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
+							<b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
+							<b:widget-setting name='timestampLabel'>on</b:widget-setting>
+							<b:widget-setting name='reactionsLabel'/>
+							<b:widget-setting name='showAuthorProfile'>true</b:widget-setting>
+							<b:widget-setting name='style.layout'>1x1</b:widget-setting>
+							<b:widget-setting name='showLabels'>true</b:widget-setting>
+							<b:widget-setting name='showLocation'>false</b:widget-setting>
+							<b:widget-setting name='postLabelsLabel'>Labels :</b:widget-setting>
+							<b:widget-setting name='showTimestamp'>true</b:widget-setting>
+							<b:widget-setting name='postsPerAd'>1</b:widget-setting>
+							<b:widget-setting name='showBacklinks'>false</b:widget-setting>
+							<b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
+							<b:widget-setting name='showInlineAds'>true</b:widget-setting>
+							<b:widget-setting name='showReactions'>false</b:widget-setting>
+						</b:widget-settings>				
+						<b:includable id='main' var="this">
+
+							<section class="container d-flex flex-column h-100 my-3">
+								<div class="row justify-content-center my-auto">
+									<div class="col-12 col-md-7">
+										<b:loop index='x' values="data:posts" var="post">
+											<h1 class="fs-2"><data:post.title/></h1>
+											<b:if cond='data:view.isPost'>
+												<div class="mb-3">
+													<b:if cond='data:this.allBylineItems.author'>
+														<data:this.allBylineItems.author.label/>
+														<data:post.author.name/>
+													</b:if>
+													&#183;
+													<b:if cond='data:this.allBylineItems.timestamp'>
+														<data:this.allBylineItems.timestamp.label/> <data:post.date/>
+													</b:if>
+												</div>
+											</b:if>
+											<article>
+												<data:post.body/>
+											</article>
+										</b:loop>
+									</div>
+								</div>
+							</section>
+
+						</b:includable>
+					</b:widget>
+					<b:widget cond='data:view.isPost' id='HTML3' locked='true' title='Ads Bottom' type='HTML' visible='true'>
+						<b:widget-settings>
+							<b:widget-setting name='content'><![CDATA[
+								ads here
+								]]>
+							</b:widget-setting>
+						</b:widget-settings>
+						<b:includable id='main'>
+							<section class="container mb-3">
+								<div class="row justify-content-center">
+									<div class="col-12 col-md-7">
+										<div class="ads-horizontal">
+											<data:content/>
+										</div>
+									</div>
+								</div>
+							</section>
+						</b:includable>
+					</b:widget>
+					<b:widget cond='data:view.isPage' id='ContactForm1' locked='true' title='Contact' type='ContactForm' visible='true'>
+						<b:includable id='main'>
+
+							<div class="modal fade" id="modalContact" tabindex="-1" aria-labelledby="modalContactTitle" aria-hidden="true">
+								<div class="modal-dialog modal-sm modal-dialog-centered">
+									<div class="modal-content">
+										<div class="modal-header">
+											<strong class="modal-title text-dark" id="modalContactTitle">
+												<data:title/>
+											</strong>
+											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+										</div>
+										<div class="modal-body">
+
+											<form name='contact-form'>  
+
+												<div class='mb-3'>
+													<input class='form-control contact-form-name' expr:id='data:widget.instanceId + &quot;_contact-form-name&quot;' expr:placeholder='data:contactFormNameMsg' name='name' type='text'/>
+												</div>
+
+												<div class='mb-3'>
+													<input class='form-control contact-form-email' expr:id='data:widget.instanceId + &quot;_contact-form-email&quot;' expr:placeholder='data:contactFormEmailMsg' name='email' type='email'/>
+												</div>
+
+												<div class='mb-3'>
+													<textarea class='form-control contact-form-email-message' cols='25' expr:id='data:widget.instanceId + &quot;_contact-form-email-message&quot;' expr:placeholder='data:contactFormMessageMsg' name='email-message' rows='5'/>
+												</div>
+
+												<input class='btn btn-outline-primary contact-form-button contact-form-button-submit' expr:id='data:widget.instanceId + &quot;_contact-form-submit&quot;' expr:value='data:contactFormSendMsg' type='button'/>  
+
+												<div class='mt-2 text-danger'>
+													<div class='contact-form-error-message' expr:id='data:widget.instanceId + &quot;_contact-form-error-message&quot;'/>
+													<div class='contact-form-success-message' expr:id='data:widget.instanceId + &quot;_contact-form-success-message&quot;'/>
+												</div>
+
+											</form>
+
+										</div>											
+									</div>
+								</div>
+							</div>
+						</b:includable>
+						<b:includable id='content'/> 
+					</b:widget>		
+				</b:section>
+			</b:if>
+
+			<b:comment>main archive, search, error</b:comment>
+			<b:if cond='data:view.isArchive OR data:view.isSearch OR data:view.isError'>
+				<!-- redirect to home -->
+				<section class="container d-flex flex-column h-100">
+					<div class="row justify-content-center my-auto">
+						<div class="col-12 col-md-7 text-center">
+							<p class="fs-2 fw-bold">This page not use On Safelink :)</p>
+							<a class="text-decoration-none fw-bold" expr:href='data:blog.homepageUrl'>Back to Home</a>
+						</div>
+					</div>
+				</section>
+			</b:if>
+
+			<b:comment>credit</b:comment>
+			<b:section showaddelement='false' id='WidgetBottom'>
+				<b:widget id='Text1' locked='true' title='Credit' type='Text' visible='true'>
+					<b:widget-settings>
+						<b:widget-setting name='content'><![CDATA[2022]]></b:widget-setting>
+						</b:widget-settings>
+						<b:includable id='main'>
+							<footer class="text-center mb-3">				
+								<p class='m-0'>
+									Copyright &#169;<data:content/> <a class='text-decoration-none text-dark' expr:href='data:blog.homepageUrl'><data:blog.title/></a>
+								</p>
+								<small>
+									<data:messages.poweredByBlogger/> &#183; <a class='text-decoration-none fw-bold' href='https://github.com/kurteyki/SafePlatinum' target='_blank' rel='nofollow noopener'>
+										<i class="bi bi-layout-text-window-reverse"></i> by irfan.ycd (v2.0)
+									</a> 
+								</small>
+							</footer>	
+						</b:includable>
+					</b:widget>		
+					<b:widget id='HTML4' locked='true' title='Configuration' type='HTML' visible='true'>
+						<b:widget-settings>
+							<b:widget-setting name='content'><![CDATA[						
+								const safeLinkConfig = {
+									secretKey: 'iE!)#)$%%;;D',
+									parameterName: 'f',
+									countDownTimer: 5
+								};
+								]]>
+							</b:widget-setting>
+						</b:widget-settings>
+						<b:includable id='main'>
+							<script>
+								/* safeLink config */
+								<data:content/>
+							</script>
+						</b:includable>
+					</b:widget>
+					<b:widget id='HTML5' locked='true' title='HTML Script' type='HTML' visible='true'>
+						<b:widget-settings>
+							<b:widget-setting name='content'><![CDATA[
+								<!-- insert you ads script here -->
+								]]>
+							</b:widget-setting>
+						</b:widget-settings>
+						<b:includable id='main'>
+							<data:content/>
+						</b:includable>
+					</b:widget>
+				</b:section>		
+
+				<b:comment>noScript</b:comment>
+				<noscript>
+					<style>
+						.noscript {
+							position: fixed;
+							top: 0;
+							left: 0;
+							right: 0;
+							bottom: 0;
+							background: rgb(0 0 0 / 50%);
+							z-index: 999;
+						}
+
+						/* remove safelink */
+						#main-getlink, #main-gotolink{display: none}
+					</style>
+					<div class="noscript d-flex flex-column h-100">
+						<div class="card m-auto">
+							<div class="card-body p-5 text-center">
+								<strong class="fs-3 mb-3">
+									Javascript has Disable, Please Enable !
+								</strong>
+								<p>
+									This web run use javascript for work perfectly, please enable javascript
+								</p>
+							</div>
+						</div>
+					</div>
+				</noscript>
+
+			</main>
+
+			<b:comment>JS External</b:comment>
+			<b:include name='jsx'/>
+
+			<b:comment>JS Internal</b:comment>
+			<script>
+		//<![CDATA[    
+
+		/* remove space from string */
+		function trimString(str) {
+			return str.replace(/^\s+/, '').replace(/\s+$/, ''); 
+		}
+
+		/* global CryptoJS 
+		* https://github.com/evgenyneu/aes-crypto-web
+		*/
+		var aesCrypto = {};
+
+		(function (obj) {
+			'use strict';
+
+			obj.formatter = {
+				prefix: '',
+				stringify: function (params) {
+					var str = this.prefix;
+					str += params.salt.toString();
+					str += params.ciphertext.toString();
+					return str;
+				},
+				parse: function (str) {
+					var params = CryptoJS.lib.CipherParams.create({}),
+					prefixLen = this.prefix.length;
+
+					if (str.indexOf(this.prefix) !== 0) { return params; }
+
+					params.ciphertext = CryptoJS.enc.Hex.parse(str.substring(16 + prefixLen));
+					params.salt = CryptoJS.enc.Hex.parse(str.substring(prefixLen, 16 + prefixLen));
+					return params;
+				}
+			};
+
+			obj.encrypt = function (text, password) {
+				try {
+					return CryptoJS.AES.encrypt(text, password, { format: obj.formatter }).toString();
+				} catch (err) { return ''; }
+			};
+
+			obj.decrypt = function (text, password) {
+				try {
+					var decrypted = CryptoJS.AES.decrypt(text, password, { format: obj.formatter });
+					return decrypted.toString(CryptoJS.enc.Utf8);
+				} catch (err) { return ''; }
+			};
+		}(aesCrypto));
+		//]]>			
+	</script>	
+
+	<b:comment>JS Homepage</b:comment>
+	<b:include cond='data:view.isHomepage' name='jsh'/>			
+
+	<b:comment>JS Post</b:comment>
+	<b:include cond='data:view.isPost' name='jsp'/>				
+
+	<b:comment>Define Default Code Here</b:comment>
+	<b:defaultmarkups>
+		<b:defaultmarkup type='Common'>
+			<b:includable id='cssx'>
+				<b:comment>insert css external here</b:comment>
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0-beta1/css/bootstrap.min.css" integrity="sha512-o/MhoRPVLExxZjCFVBsm17Pkztkzmh7Dp8k7/3JrtNCHh0AQ489kwpfA3dPSHzKDe8YCuEhxXq3Y71eb/o6amg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.3/font/bootstrap-icons.min.css" integrity="sha512-YzwGgFdO1NQw1CZkPoGyRkEnUTxPSbGWXvGiXrWk8IeSqdyci0dEDYdLLjMxq1zCoU0QBa4kHAFiRhUL3z2bow==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+			</b:includable>
+			<b:includable id='jsx'>
+				<b:comment>insert js external here</b:comment>	
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0-beta1/js/bootstrap.min.js" integrity="sha512-Hqe3s+yLpqaBbXM6VA0cnj/T56ii5YjNrMT9v+us11Q81L0wzUG0jEMNECtugqNu2Uq5MSttCg0p4KK0kCPVaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>	
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>		
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+			</b:includable>	
+			<b:includable id='jsh'>		
+				<script>
+					//<![CDATA[    
+					$("#form-safelink").on("submit",function(e){
+						e.preventDefault();
+
+						/* get input value */
+						var url = $("input[name=url]").val();
+
+						/* animation */
+						$("#result-safelink").html(`<div class="text-center"><div class="spinner-border text-primary" role="status"></div></div>`);
+
+						/* get feed */
+						$.ajax({
+							url : '/feeds/posts/summary?alt=json-in-script',
+							type: 'get',
+							dataType: 'jsonp',
+							success: function(data) {
+								var link,
+								content = data.feed.entry,
+								links =new Array();	
+								if (content !== undefined) {
+									for (var i = 0; i < content.length; i++) {
+										for (var j = 0; j < content[i].link.length; j++) {
+											if (content[i].link[j].rel == "alternate") {
+												link = content[i].link[j].href;
+												break;
+											}
+										}
+										links[i] = link;
+										var randomIndex = parseInt(Math.random() * links.length);
+									}
+
+									var resulthashLink = `${links[randomIndex]}#?${safeLinkConfig.parameterName}=${aesCrypto.encrypt(trimString(url),trimString(safeLinkConfig.secretKey))}`;
+
+									$("#result-safelink").html(`
+										<div class="mb-3">
+										<input id="resultLink" class="form-control" value="${resulthashLink}" onclick="this.focus();this.select()" readonly="readonly" type="text"/>
+										</div>
+										<div class="text-center">
+										<button id="copyLink" type="button" class="btn btn-primary btn-sm">
+										<i class="bi bi-clipboard"></i> Copy Link
+										</button>
+										</div>
+										`);
+
+								}else {
+									/* no feed found */
+									$("#result-safelink").html(`<div class="alert alert-warning" role="alert">no Post Found, please create Post first and remember feed status must full or summary</div>`);
+								}
+							},
+							error: function() {
+								/* fail get feed */
+								$("#result-safelink").html('<div class="alert alert-warning" role="alert">fail get Feed, please try again or check your feed !</div>');
+							}
+						});
+					});
+
+					/* copy button */
+					$(document).on('click', '#copyLink', function(element){
+						$("#resultLink").select();
+						document.execCommand("copy");
+						$(this).html(`<i class="bi bi-clipboard-check"></i> Link Copied to Clipboard`);
+						/* reset text to default */
+						setTimeout(function(){
+							$("#copyLink").html(`<i class="bi bi-clipboard"></i> Copy Link`);
+						},1000);
+					});
+					//]]>		
+				</script>			
+			</b:includable>
+			<b:includable id='jsp'>	
+				<script>
+					//<![CDATA[  
+					/*	https://github.com/johnschult/jquery.countdown360 */
+					!function(t,s,i,e){var n="countdown360",h={radius:15.5,strokeStyle:"#0d6efd",strokeWidth:void 0,fillStyle:"#0046c7",fontColor:"#477050",fontFamily:"sans-serif",fontSize:void 0,fontWeight:700,autostart:!0,seconds:10,onComplete:void 0};function a(s,i){this.element=s,this.settings=t.extend({},h,i),this.settings.fontSize||(this.settings.fontSize=this.settings.radius/1.2),this.settings.strokeWidth||(this.settings.strokeWidth=this.settings.radius/4),this._defaults=h,this._name=n,this._init()}a.prototype={start:function(){this.startedAt=new Date,this._drawCountdownShape(3.5*Math.PI,!0),this._drawCountdownLabel(0),this.interval=setInterval(jQuery.proxy(this._draw,this),1e3)},stop:function(t){clearInterval(this.interval),t&&t()},_init:function(){this.settings.width=2*this.settings.radius+2*this.settings.strokeWidth,this.settings.height=this.settings.width,this.settings.arcX=this.settings.radius+this.settings.strokeWidth,this.settings.arcY=this.settings.arcX,this._initPen(this._getCanvas()),this.settings.autostart&&this.start()},_getCanvas:function(){var s=t('<canvas id="countdown360_'+t(this.element).attr("id")+'" width="'+this.settings.width+'" height="'+this.settings.height+'"></canvas>');return t(this.element).prepend(s[0]),s[0]},_initPen:function(t){this.pen=t.getContext("2d"),this.pen.lineWidth=this.settings.strokeWidth,this.pen.strokeStyle=this.settings.strokeStyle,this.pen.fillStyle=this.settings.fillStyle,this.pen.font=this.settings.fontWeight+" "+this.settings.fontSize+"px "+this.settings.fontFamily,this.pen.textAlign="center",this.pen.textBaseline="middle",this._clearRect()},_clearRect:function(){this.pen.clearRect(0,0,this.settings.width,this.settings.height)},_drawCountdownLabel:function(t){this.pen.fillStyle=this.settings.fontColor,this.pen.fillText(this.settings.seconds-t,this.settings.width/2,this.settings.height/2)},_drawCountdownShape:function(t,s){this.pen.fillStyle=this.settings.fillStyle,this.pen.beginPath(),this.pen.arc(this.settings.arcX,this.settings.arcY,this.settings.radius,1.5*Math.PI,t,!1),this.pen.fill(),s&&this.pen.stroke()},_draw:function(){var t=Math.round(((new Date).getTime()-this.startedAt.getTime())/1e3),s=3.5*Math.PI-2*Math.PI/this.settings.seconds*t;this._clearRect(),this._drawCountdownShape(3.5*Math.PI,!1),t<this.settings.seconds?(this._drawCountdownShape(s,!0),this._drawCountdownLabel(t)):(this._drawCountdownLabel(this.settings.seconds),this.stop(),this.settings.onComplete())}},t.fn[n]=function(s){var i;return this.each(function(){(i=t.data(this,"plugin_"+n))||(i=new a(this,s),t.data(this,"plugin_"+n,i))}),i}}(jQuery,window,document);
+
+
+					/* function get parameter */
+					const getParameter = (name)=>{
+						var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+						return results == null ? null : decodeURI(results[1]) || 0;
+					}	
+
+					/* safelink logic */
+
+					/* get urlHash from parameter */
+					const urlHash = getParameter(safeLinkConfig.parameterName);
+
+					/* push new url to browser (remove hash parameter) */
+					history.pushState(null, "", location.href.split("#")[0]);
+
+					/* if urlHash exist > show coutndown */
+					if (urlHash != null){
+						/* show and enable button getlink */
+						$("#getlink").removeClass('d-none');	
+						$("#getlink").prop('disabled',false);				
+					}else{
+						/* remove main safelink */
+						$("#main-getlink").remove();
+						$("#main-gotolink").remove();
+					}
+
+					/* show coutnDown first but not loading */
+					let countDown = $("#timer").countdown360({
+						radius      : 40,
+						seconds     : safeLinkConfig.countDownTimer,
+						strokeWidth : 4,
+						fontColor   : '#FFF',
+						fillStyle   : '#2196f3',
+						strokeStyle : '#084e87',
+						fontSize    : 24,
+						autostart   : false,
+						onComplete  : function () { 
+							/* remove countdown */
+							$('#timer').remove();
+							/* show gotolink button */
+							$("#gotolink").removeClass('d-none');
+							$("#gotolink").prop('disabled',false);
+
+							/* add event after countdown finish > gotolink on click */
+							$("#gotolink").on("click",function(){
+								/* decode hash */
+								var urlHashDecode = aesCrypto.decrypt(trimString(urlHash),trimString(safeLinkConfig.secretKey));
+
+								/* redirect */
+								(urlHashDecode) ? window.location.href = urlHashDecode : alert('hash invalid');
+								
+							});								
+						}
+					})	
+
+					/* when getlink click */
+					var getlinkClick = false;
+					$("#getlink").on("click", function(){
+
+						/* scroll to gotolink */
+						$('html, body').animate({
+							scrollTop: eval($("#main-gotolink").offset().top - 100)
+						}, 0);
+
+						/* run countDown */
+						if (!getlinkClick) {
+							countDown.start();
+
+							/* update getLinkClick > prevent double countDown */
+							getlinkClick = true;							
+						}
+
+					})
+					//]]>		
+				</script>  				
+			</b:includable>				
+		</b:defaultmarkup>			
+	</b:defaultmarkups>			
+
+	</body> <!-- // break
+	-->	
+	</html>
