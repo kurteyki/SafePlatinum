@@ -78,8 +78,6 @@ scriptCrptoJS.onload = function() {
 			postLinks[i] = postUrl;
 		}
 
-		console.info(postLinks);
-
 		/* replace link helper */
 		const getDomainName = (url) => {
 			var hostname;
