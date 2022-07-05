@@ -126,9 +126,15 @@
 				<b:widget id='HTML1' locked='true' title='Banner Download' type='HTML' visible='true'>
 					<b:widget-settings>
 						<b:widget-setting name='content'><![CDATA[
-							<a target="_blank" rel="nofollow noopener" class="d-flex bg-warning text-dark fw-bold py-2 text-center text-decoration-none justify-content-center" href="https://github.com/kurteyki/SafePlatinum">
-								<i class="bi bi-github"></i> Download this Safelink
-							</a>
+							<div class="d-flex bg-warning text-dark fw-bold py-2 text-center justify-content-center">	
+								<a target="_blank" rel="nofollow noopener" class="text-decoration-none text-dark" href="https://github.com/kurteyki/SafePlatinum">
+									<i class="bi bi-github"></i> Download this Safelink
+								</a>
+								&nbsp; or &nbsp;
+								<a target="_blank" rel="nofollow noopener" class="text-decoration-none text-primary" href="https://t.me/kurteyki">
+									<i class="bi bi-telegram"></i> Join Telegram
+								</a>
+							</div>
 							]]>
 						</b:widget-setting>
 					</b:widget-settings>
