@@ -24,33 +24,62 @@ if (urlHash != null){
 }
 
 /* show coutnDown first but not loading */
-let countDown = $("#timer").countdown360({
-	radius      : 40,
-	seconds     : safeLinkConfig.countDownTimer,
-	strokeWidth : 4,
-	fontColor   : '#FFF',
-	fillStyle   : '#2196f3',
-	strokeStyle : '#084e87',
-	fontSize    : 24,
-	autostart   : false,
-	onComplete  : function () { 
-		/* remove countdown */
-		$('#timer').remove();
-		/* show gotolink button */
-		$("#gotolink").removeClass('d-none');
-		$("#gotolink").prop('disabled',false);
+var timer = $("#timer"),
+delay = safeLinkConfig.countDownTimer,
+delta = 1000,
+start = 0;
 
-		/* add event after countdown finish > gotolink on click */
-		$("#gotolink").on("click",function(){
-			/* decode hash */
-			var urlHashDecode = aesCrypto.decrypt(trimString(urlHash),trimString(safeLinkConfig.secretKey));
+window.setTimeout(function () {
 
-			/* redirect */
-			(urlHashDecode) ? window.location.href = urlHashDecode : alert('hash invalid');
-			
-		});								
-	}
-})	
+	var time = delay * 1000,
+	countDown;
+
+	var countDown = setInterval(function () {
+
+	    // pause first
+	    if (!start) {return;}
+
+		// pause when blurred
+		if (window.blurred) {return;}
+
+		// count
+		time -= delta;
+
+		// send count to element
+		$(".timer").text(time / 1000);
+
+		// callback when time is finished
+		if (time <= 0) {
+			clearInterval(countDown);
+
+			/* remove countdown */
+			timer.remove();
+
+			/* show gotolink button */
+			$("#gotolink").removeClass('d-none');
+			$("#gotolink").prop('disabled',false);
+
+			/* add event after countdown finish > gotolink on click */
+			$("#gotolink").on("click",function(){
+				/* decode hash */
+				var urlHashDecode = aesCrypto.decrypt(trimString(urlHash),trimString(safeLinkConfig.secretKey));
+
+				/* redirect */
+				(urlHashDecode) ? window.location.href = urlHashDecode : alert('hash invalid');
+				
+			});			
+
+		}
+
+	}, delta);
+}, 500);
+
+window.onblur = function () {
+	window.blurred = true;
+};
+window.onfocus = function () {
+	window.blurred = false;
+};			
 
 /* when getlink click */
 var getlinkClick = false;
@@ -63,7 +92,14 @@ $("#getlink").on("click", function(){
 
 	/* run countDown */
 	if (!getlinkClick) {
-		countDown.start();
+
+		// show count down
+		timer.html(`<div class="countdown">
+		<span class="timer">${delay}</span>
+		<span class="seconds">seconds</span>
+		</div>`);
+
+		start = 1;
 
 		/* update getLinkClick > prevent double countDown */
 		getlinkClick = true;							

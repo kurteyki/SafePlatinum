@@ -23,5 +23,9 @@ Made By Irfan
 If you like this template give me [Donate](https://tools.kurteyki.com/donate) :)
 
 ## Change Log
-2 Juli 2022
+25 August 2022 
+- Change Countdown360 to native
+- Countdown not running when window blurred (focus)
+
+2 July 2022
 - rebuild from old version

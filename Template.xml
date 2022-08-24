@@ -531,8 +531,7 @@ const safeLinkConfig = {
 					<script src="https://cdn.jsdelivr.net/gh/kurteyki/SafePlatinum@1a36e20b6100a3ee1e58b8afeb2008f14436bbaf/app-h.js"></script>
 				</b:includable>
 				<b:includable id='jsp'>	
-					<script src="https://cdn.jsdelivr.net/gh/kurteyki/SafePlatinum@1a36e20b6100a3ee1e58b8afeb2008f14436bbaf/jquery-countdown360.js"></script>
-					<script src="https://cdn.jsdelivr.net/gh/kurteyki/SafePlatinum@1a36e20b6100a3ee1e58b8afeb2008f14436bbaf/app-p.js"></script>
+					<script src="https://cdn.jsdelivr.net/gh/kurteyki/SafePlatinum@1a36e20b6100a3ee1e58b8afeb2008f14436bbaf/app-p.js"></script>				
 				</b:includable>				
 			</b:defaultmarkup>			
 		</b:defaultmarkups>			
