@@ -1,0 +1,931 @@
+<?xml version='1.0' encoding='utf-8'?><?xml-stylesheet href="https://www.blogger.com/styles/atom.css" type="text/css"?><feed xmlns='http://www.w3.org/2005/Atom' xmlns:openSearch='http://a9.com/-/spec/opensearchrss/1.0/' xmlns:gd='http://schemas.google.com/g/2005' xmlns:thr='http://purl.org/syndication/thread/1.0' xmlns:georss='http://www.georss.org/georss'><id>tag:blogger.com,1999:blog-2572754653896115362.archive</id><updated>2022-08-25T02:41:35.413+07:00</updated><title type='text'>Safe Platinum</title><link rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/archive'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/archive'/><link rel='http://schemas.google.com/g/2005#post' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/archive'/><link rel='alternate' type='text/html' href='http://safeplatinum.blogspot.com/'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author><generator version='7.00' uri='https://www.blogger.com'>Blogger</generator><entry><id>tag:blogger.com,1999:blog-2572754653896115362.layout</id><published>2017-08-31T04:08:22.104+07:00</published><updated>2022-08-25T02:41:35.413+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#template'/><title type='text'>Template: Safe Platinum</title><content type='text'>&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html b:css='false' b:defaultwidgetversion='2' b:js='true' b:layoutsVersion='3' b:responsive='true' b:templateUrl='SafePlatinum.xml' b:templateVersion='1.0' class='h-100' expr:dir='data:blog.languageDirection' expr:lang='data:blog.locale' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'&gt;
+
+	&lt;b:comment&gt;Always remove Inject attribute with b:attr&lt;/b:comment&gt;
+	&lt;b:attr name='xmlns' value=''/&gt;
+	&lt;b:attr name='xmlns:b' value=''/&gt;
+	&lt;b:attr name='xmlns:expr' value=''/&gt;
+	&lt;b:attr name='xmlns:data' value=''/&gt;	
+	&amp;lt;!--&lt;head&gt;--&amp;gt;&amp;lt;head&amp;gt;
+
+	&lt;b:comment&gt;Browser Data&lt;/b:comment&gt;
+	&lt;meta expr:charset='data:blog.encoding'/&gt;
+	&lt;meta content='IE=edge' http-equiv='X-UA-Compatible'/&gt;
+	&lt;meta content='width=device-width, initial-scale=1.0' name='viewport'/&gt;
+	&lt;b:comment&gt;Favicon&lt;/b:comment&gt;
+	&lt;link expr:href='data:blog.blogspotFaviconUrl' rel='icon' type='image/x-icon'/&gt;
+	&lt;b:if cond='data:widgets'&gt;
+		&lt;b:comment&gt;Browser Mobile Navbar Color&lt;/b:comment&gt;
+		&lt;meta expr:content='data:skin.vars.mainColor' name='theme-color'/&gt;
+		&lt;meta expr:content='data:skin.vars.mainColor' name='msapplication-navbutton-color'/&gt;
+	&lt;/b:if&gt;
+
+	&lt;b:comment&gt;SEO Title&lt;/b:comment&gt;
+	&lt;b:if cond='data:view.isHomepage'&gt;
+		&lt;b:comment&gt;Homepage&lt;/b:comment&gt;
+		&lt;title&gt;&lt;data:blog.title.escaped/&gt;&lt;/title&gt;
+		&lt;b:elseif cond='data:view.isSingleItem'/&gt;
+		&lt;b:comment&gt;Post / Pages&lt;/b:comment&gt;
+		&lt;title&gt;&lt;data:blog.pageName.escaped/&gt;&lt;/title&gt;			
+		&lt;b:elseif cond='data:view.isSearch'/&gt;
+		&lt;b:if cond='data:view.search.query'&gt;
+			&lt;b:comment&gt;Search Query&lt;/b:comment&gt;
+			&lt;title&gt;&lt;data:blog.pageName.escaped/&gt;&lt;/title&gt;
+			&lt;b:elseif cond='data:view.search.label'/&gt;
+			&lt;b:comment&gt;Search Label&lt;/b:comment&gt;
+			&lt;title&gt;&lt;data:blog.pageName.escaped/&gt;&lt;/title&gt;
+			&lt;b:else/&gt;
+			&lt;b:comment&gt;Search Index&lt;/b:comment&gt;
+			&lt;title&gt;&lt;data:blog.title.escaped/&gt;&lt;/title&gt;
+		&lt;/b:if&gt;
+		&lt;b:elseif cond='data:view.isArchive'/&gt;
+		&lt;b:comment&gt;Archive&lt;/b:comment&gt;
+		&lt;title&gt;&lt;data:blog.pageName.escaped/&gt;&lt;/title&gt;
+		&lt;b:elseif cond='data:view.isError'/&gt;
+		&lt;b:comment&gt;404&lt;/b:comment&gt;
+		&lt;title&gt; 404 | Page Not Found &lt;/title&gt; 
+	&lt;/b:if&gt;
+
+	&lt;b:comment&gt;SEO Description&lt;/b:comment&gt;
+	&lt;b:if cond='data:blog.metaDescription'&gt;
+		&lt;meta expr:content='data:blog.metaDescription' name='description'/&gt;
+	&lt;/b:if&gt;
+
+	&lt;b:comment&gt;Canonical URL&lt;/b:comment&gt;
+	&lt;b:if cond='data:view.isSearch AND not data:view.search.query AND not data:view.search.label'&gt;
+		&lt;b:comment&gt;Canonical for Pagination Homepage&lt;/b:comment&gt;
+		&lt;link expr:href='data:blog.canonicalHomepageUrl' rel='canonical'/&gt;
+		&lt;b:else/&gt;
+		&lt;link expr:href='data:blog.url.canonical' rel='canonical'/&gt;
+	&lt;/b:if&gt;
+
+	&lt;b:comment&gt;Block SE Robots on Page [Search Query / Label, Archive]&lt;/b:comment&gt;
+	&lt;b:if cond='data:view.search.query OR data:view.search.label OR data:view.isArchive'&gt;
+		&lt;meta content='noindex,nofollow' name='robots'/&gt;
+	&lt;/b:if&gt;		
+
+	&lt;b:comment&gt;Blog Feeds&lt;/b:comment&gt;
+	&lt;data:blog.feedLinks/&gt;
+
+	&lt;b:comment&gt;Meta OpenGraph&lt;/b:comment&gt;
+	&lt;b:include name='openGraphMetaData'/&gt;
+
+	&lt;b:comment&gt;Blog restricted Age&lt;/b:comment&gt;
+	&lt;b:if cond='data:blog.adultContent'&gt;
+		&lt;meta content='adult' name='rating'/&gt;
+	&lt;/b:if&gt;
+
+	&lt;b:comment&gt;CSS External&lt;/b:comment&gt;
+	&lt;b:include name='cssx'/&gt;
+
+	&lt;b:skin&gt;&lt;![CDATA[ 
+		/*
+		&lt;Group description="Main"&gt;
+			&lt;Variable name="mainColor" description="MainColor" type="color" default="#FFFFFF" hideEditor="false"  value="#FFFFFF"/&gt;
+		&lt;/Group&gt;
+		*/
+		
+	]]&gt;&lt;/b:skin&gt;
+	&lt;b:if cond='data:view.isLayoutMode'&gt;
+		&lt;b:template-skin&gt;
+			&lt;![CDATA[
+			body#layout {min-width:768px;padding:100px 20px 0 !important;}
+			body#layout .hidden, body#layout .invisible {display: inherit;}
+			body#layout::before {
+			content: "SafePlatinum";
+			position: absolute;
+			top: 20px;
+			right: 27px;
+			padding: 14px 22px;
+			font-family: monospace;
+			font-size: 18px;
+			color: #3f51b5;
+			background: #c8e7ff;
+			border-radius: 2px 4px;
+			border: 1px solid #3f51b5;
+			}
+			]]&gt;
+		&lt;/b:template-skin&gt;
+	&lt;/b:if&gt;
+
+	&lt;b:comment&gt;CSS Internal&lt;/b:comment&gt;
+	&lt;style type='text/css'&gt;
+	&lt;/style&gt;
+
+	&lt;b:comment&gt;Google Analytics&lt;/b:comment&gt;
+	&lt;b:include data='blog' name='google-analytics'/&gt;	
+
+	&amp;lt;!--&lt;/head&gt;--&amp;gt;&amp;lt;/head&amp;gt;
+	&lt;body class='d-flex flex-column h-100'&gt;
+
+		&lt;main class='d-flex flex-column h-100'&gt;
+
+			&lt;b:comment&gt;banner download&lt;/b:comment&gt;
+			&lt;b:section id='WidgetTop' showaddelement='false'&gt;
+&lt;b:widget id='HTML1' locked='true' title='Banner Download' type='HTML' version='2' visible='true'&gt;
+  &lt;b:widget-settings&gt;
+    &lt;b:widget-setting name='content'&gt;&amp;lt;div class=&amp;quot;d-flex bg-warning text-dark fw-bold py-2 text-center justify-content-center&amp;quot;&amp;gt;	
+								&amp;lt;a target=&amp;quot;_blank&amp;quot; rel=&amp;quot;nofollow noopener&amp;quot; class=&amp;quot;text-decoration-none text-dark&amp;quot; href=&amp;quot;https://github.com/kurteyki/SafePlatinum&amp;quot;&amp;gt;
+									&amp;lt;i class=&amp;quot;bi bi-github&amp;quot;&amp;gt;&amp;lt;/i&amp;gt; Download this Safelink
+								&amp;lt;/a&amp;gt;
+								&amp;amp;nbsp; or &amp;amp;nbsp;
+								&amp;lt;a target=&amp;quot;_blank&amp;quot; rel=&amp;quot;nofollow noopener&amp;quot; class=&amp;quot;text-decoration-none text-primary&amp;quot; href=&amp;quot;https://t.me/kurteyki&amp;quot;&amp;gt;
+									&amp;lt;i class=&amp;quot;bi bi-telegram&amp;quot;&amp;gt;&amp;lt;/i&amp;gt; Join Telegram
+								&amp;lt;/a&amp;gt;
+							&amp;lt;/div&amp;gt;&lt;/b:widget-setting&gt;
+  &lt;/b:widget-settings&gt;
+  &lt;b:includable id='main'&gt;
+						&lt;data:content/&gt;
+					&lt;/b:includable&gt;
+&lt;/b:widget&gt;
+&lt;b:widget id='PageList1' locked='true' title='PageList' type='PageList' version='2' visible='true'&gt;
+  &lt;b:widget-settings&gt;
+    &lt;b:widget-setting name='pageListJson'&gt;&lt;![CDATA[{"4858526422275444464":{"href":"https://safeplatinum.blogspot.com/p/site-issue-report.html","position":4,"title":"Site Issue Report"},"link0":{"href":"https://safeplatinum.blogspot.com/","position":0,"title":"Home"},"8419652509049181409":{"href":"https://safeplatinum.blogspot.com/p/terms-and-conditions.html","position":3,"title":"TOS"},"225901037041030665":{"href":"https://safeplatinum.blogspot.com/p/privacy-policy.html","position":1,"title":"Privacy Policy"},"7933860274618073716":{"href":"https://safeplatinum.blogspot.com/p/welcome-to-disclaimers-page.html","position":2,"title":"Disclaimers"}}]]&gt;&lt;/b:widget-setting&gt;
+    &lt;b:widget-setting name='homeTitle'&gt;Home&lt;/b:widget-setting&gt;
+  &lt;/b:widget-settings&gt;
+  &lt;b:includable id='main'&gt;
+
+						&lt;nav class='py-2 bg-light border-bottom'&gt;
+							&lt;div class='container d-flex justify-content-center'&gt;
+								&lt;ul class='nav'&gt;							
+									&lt;b:loop values='data:links' var='link'&gt;
+										&lt;li class='nav-item'&gt;
+											&lt;a class='nav-link link-dark px-2' expr:href='data:link.href'&gt;&lt;data:link.title/&gt;&lt;/a&gt;
+										&lt;/li&gt;
+									&lt;/b:loop&gt;
+
+									&lt;li class='nav-item'&gt;
+										&lt;a class='nav-link link-dark px-2' data-bs-target='#autosafelink' data-bs-toggle='modal' href='javascript:;'&gt;Auto Safelink&lt;/a&gt;
+									&lt;/li&gt;
+								&lt;/ul&gt;
+							&lt;/div&gt;
+						&lt;/nav&gt;
+
+						&lt;!-- modal autosafelink --&gt;
+						&lt;div aria-hidden='true' aria-labelledby='autosafelinkLabel' class='modal fade' id='autosafelink' tabindex='-1'&gt;
+							&lt;div class='modal-dialog modal-dialog-centered'&gt;
+								&lt;div class='modal-content'&gt;
+									&lt;div class='modal-header'&gt;
+										&lt;h5 class='modal-title' id='autosafelinkLabel'&gt;Auto Safelink Script&lt;/h5&gt;
+										&lt;button aria-label='Close' class='btn-close' data-bs-dismiss='modal' type='button'/&gt;
+									&lt;/div&gt;
+									&lt;div class='modal-body'&gt;
+										&lt;p&gt;
+											Insert this script for you main Blog
+										&lt;/p&gt;
+
+										&lt;div class='my-4 border p-3'&gt;
+											&lt;pre&gt;&lt;code class='user-select-all' id='autosafelinkCode'/&gt;&lt;/pre&gt;
+											&lt;/div&gt;
+
+											&lt;p class='alert alert-info'&gt;
+												script will replace all link from your main blog go to this safelink
+											&lt;/p&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+
+						&lt;/b:includable&gt;
+  &lt;b:includable id='content'/&gt;
+  &lt;b:includable id='overflowButton'/&gt;
+  &lt;b:includable id='overflowablePageList'/&gt;
+  &lt;b:includable id='pageLink'/&gt;
+  &lt;b:includable id='pageList'/&gt;
+&lt;/b:widget&gt;
+&lt;/b:section&gt;
+
+				&lt;b:comment&gt;main homepage&lt;/b:comment&gt;
+				&lt;b:if cond='data:view.isHomepage'&gt;
+
+					&lt;section class='container d-flex flex-column h-100'&gt;
+						&lt;div class='row justify-content-center my-auto'&gt;
+							&lt;div class='col-12 col-md-7'&gt;
+								&lt;div class='card shadow-sm'&gt;
+									&lt;div class='card-header border-0 bg-white p-3 text-center'&gt;
+										&lt;h1 class='fs-2 mb-0'&gt;
+											&lt;data:blog.title/&gt;
+										&lt;/h1&gt;
+										&lt;b:if cond='data:blog.metaDescription'&gt;
+											&lt;p class='m-0'&gt;&lt;data:blog.metaDescription/&gt;&lt;/p&gt;
+										&lt;/b:if&gt;
+									&lt;/div&gt;
+									&lt;div class='card-body pt-0'&gt;
+										&lt;form id='form-safelink'&gt;
+											&lt;div class='input-group mb-3'&gt;
+												&lt;span class='input-group-text'&gt;
+													&lt;i class='bi bi-globe'/&gt;
+												&lt;/span&gt;
+
+												&lt;input class='form-control' expr:placeholder='data:blog.homepageUrl' name='url' required='' type='url'/&gt;
+
+												&lt;span class='input-group-text p-0'&gt;
+													&lt;button class='btn btn-primary rounded-0' type='submit'&gt;
+														&lt;i class='fa fa-shield'&gt;
+														&lt;/i&gt;
+														&lt;strong&gt;Generate&lt;/strong&gt;
+													&lt;/button&gt;
+												&lt;/span&gt;
+											&lt;/div&gt;
+											&lt;div id='result-safelink'/&gt;
+										&lt;/form&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;								
+					&lt;/section&gt;
+
+				&lt;/b:if&gt;		
+
+				&lt;b:comment&gt;main single&lt;/b:comment&gt;
+				&lt;b:if cond='data:view.isSingleItem OR data:view.isLayoutMode'&gt;
+					&lt;b:section id='BlogWidget' showaddelement='true'&gt;
+&lt;b:widget cond='data:view.isPost' id='HTML2' locked='true' title='Ads Top' type='HTML' version='2' visible='true'&gt;
+  &lt;b:widget-settings&gt;
+    &lt;b:widget-setting name='content'&gt;ads here&lt;/b:widget-setting&gt;
+  &lt;/b:widget-settings&gt;
+  &lt;b:includable id='main'&gt;
+								&lt;section class='container mt-3'&gt;
+									&lt;div class='row justify-content-center'&gt;
+										&lt;div class='col-12 col-md-7'&gt;
+											&lt;div class='ads-horizontal'&gt;
+												&lt;data:content/&gt;
+											&lt;/div&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+								&lt;/section&gt;
+							&lt;/b:includable&gt;
+&lt;/b:widget&gt;
+&lt;b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog' version='2' visible='true'&gt;
+  &lt;b:widget-settings&gt;
+    &lt;b:widget-setting name='showDateHeader'&gt;false&lt;/b:widget-setting&gt;
+    &lt;b:widget-setting name='commentLabel'&gt;Comment&lt;/b:widget-setting&gt;
+    &lt;b:widget-setting name='style.textcolor'&gt;#ffffff&lt;/b:widget-setting&gt;
+    &lt;b:widget-setting name='showShareButtons'&gt;true&lt;/b:widget-setting&gt;
+    &lt;b:widget-setting name='authorLabel'&gt;Oleh&lt;/b:widget-setting&gt;
+    &lt;b:widget-setting name='showCommentLink'&gt;true&lt;/b:widget-setting&gt;
+    &lt;b:widget-setting name='style.urlcolor'&gt;#ffffff&lt;/b:widget-setting&gt;
+    &lt;b:widget-setting name='showAuthor'&gt;true&lt;/b:widget-setting&gt;
+    &lt;b:widget-setting name='style.linkcolor'&gt;#ffffff&lt;/b:widget-setting&gt;
+    &lt;b:widget-setting name='style.unittype'&gt;TextAndImage&lt;/b:widget-setting&gt;
+    &lt;b:widget-setting name='style.bgcolor'&gt;#ffffff&lt;/b:widget-setting&gt;
+    &lt;b:widget-setting name='reactionsLabel'/&gt;
+    &lt;b:widget-setting name='showAuthorProfile'&gt;true&lt;/b:widget-setting&gt;
+    &lt;b:widget-setting name='style.layout'&gt;1x1&lt;/b:widget-setting&gt;
+    &lt;b:widget-setting name='showLabels'&gt;true&lt;/b:widget-setting&gt;
+    &lt;b:widget-setting name='showLocation'&gt;false&lt;/b:widget-setting&gt;
+    &lt;b:widget-setting name='postLabelsLabel'&gt;Labels :&lt;/b:widget-setting&gt;
+    &lt;b:widget-setting name='showTimestamp'&gt;true&lt;/b:widget-setting&gt;
+    &lt;b:widget-setting name='postsPerAd'&gt;1&lt;/b:widget-setting&gt;
+    &lt;b:widget-setting name='showBacklinks'&gt;false&lt;/b:widget-setting&gt;
+    &lt;b:widget-setting name='style.bordercolor'&gt;#ffffff&lt;/b:widget-setting&gt;
+    &lt;b:widget-setting name='showInlineAds'&gt;true&lt;/b:widget-setting&gt;
+    &lt;b:widget-setting name='showReactions'&gt;false&lt;/b:widget-setting&gt;
+  &lt;/b:widget-settings&gt;
+  &lt;b:includable id='main' var='this'&gt;
+
+								&lt;section class='container d-flex flex-column h-100 my-3'&gt;
+									&lt;div class='row justify-content-center my-auto'&gt;
+										&lt;div class='col-12 col-md-7'&gt;
+											&lt;b:loop index='x' values='data:posts' var='post'&gt;
+												&lt;h1 class='fs-2'&gt;&lt;data:post.title/&gt;&lt;/h1&gt;
+												&lt;b:if cond='data:view.isPost'&gt;
+													&lt;div class='mb-3'&gt;
+														&lt;b:if cond='data:this.allBylineItems.author'&gt;
+															&lt;data:this.allBylineItems.author.label/&gt;
+															&lt;data:post.author.name/&gt;
+														&lt;/b:if&gt;
+														&amp;#183;
+														&lt;b:if cond='data:this.allBylineItems.timestamp'&gt;
+															&lt;data:this.allBylineItems.timestamp.label/&gt; &lt;data:post.date/&gt;
+														&lt;/b:if&gt;
+													&lt;/div&gt;
+												&lt;/b:if&gt;
+												&lt;article&gt;
+													&lt;data:post.body/&gt;
+												&lt;/article&gt;
+											&lt;/b:loop&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+								&lt;/section&gt;
+
+							&lt;/b:includable&gt;
+  &lt;b:includable id='aboutPostAuthor'&gt;
+  &lt;div class='author-name'&gt;
+    &lt;a class='g-profile' expr:href='data:post.author.profileUrl' rel='author' title='author profile'&gt;
+      &lt;span&gt;
+        &lt;data:post.author.name/&gt;
+      &lt;/span&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;span class='author-desc'&gt;
+      &lt;data:post.author.aboutMe/&gt;
+    &lt;/span&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+  &lt;b:includable id='addComments'&gt;
+  &lt;a expr:href='data:post.commentsUrl' expr:onclick='data:post.commentsUrlOnclick'&gt;
+    &lt;b:message name='messages.postAComment'/&gt;
+  &lt;/a&gt;
+&lt;/b:includable&gt;
+  &lt;b:includable id='commentAuthorAvatar'&gt;
+  &lt;div class='avatar-image-container'&gt;
+    &lt;img class='author-avatar' expr:src='data:comment.authorAvatarSrc' height='35' width='35'/&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+  &lt;b:includable id='commentDeleteIcon' var='comment'&gt;
+  &lt;span expr:class='&amp;quot;item-control &amp;quot; + data:comment.adminClass'&gt;
+    &lt;b:if cond='data:showCmtPopup'&gt;
+      &lt;div class='goog-toggle-button'&gt;
+        &lt;div class='goog-inline-block comment-action-icon'/&gt;
+      &lt;/div&gt;
+    &lt;b:else/&gt;
+      &lt;a class='comment-delete' expr:href='data:comment.deleteUrl' expr:title='data:messages.deleteComment'&gt;
+        &lt;img src='https://resources.blogblog.com/img/icon_delete13.gif'/&gt;
+      &lt;/a&gt;
+    &lt;/b:if&gt;
+  &lt;/span&gt;
+&lt;/b:includable&gt;
+  &lt;b:includable id='commentForm' var='post'&gt;
+  &lt;div class='comment-form'&gt;
+    &lt;a name='comment-form'/&gt;
+    &lt;h4 id='comment-post-message'&gt;&lt;data:messages.postAComment/&gt;&lt;/h4&gt;
+    &lt;b:if cond='data:this.messages.blogComment != &amp;quot;&amp;quot;'&gt;
+      &lt;p&gt;&lt;data:this.messages.blogComment/&gt;&lt;/p&gt;
+    &lt;/b:if&gt;
+    &lt;b:include data='post' name='commentFormIframeSrc'/&gt;
+    &lt;iframe allowtransparency='allowtransparency' class='blogger-iframe-colorize blogger-comment-from-post' expr:height='data:cmtIframeInitialHeight ?: &amp;quot;90px&amp;quot;' frameborder='0' id='comment-editor' name='comment-editor' src='' width='100%'/&gt;
+    &lt;data:post.cmtfpIframe/&gt;
+    &lt;script type='text/javascript'&gt;
+      BLOG_CMT_createIframe(&amp;#39;&lt;data:post.appRpcRelayPath/&gt;&amp;#39;);
+    &lt;/script&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+  &lt;b:includable id='commentFormIframeSrc' var='post'&gt;
+  &lt;a expr:href='data:post.commentFormIframeSrc' id='comment-editor-src'/&gt;
+&lt;/b:includable&gt;
+  &lt;b:includable id='commentItem' var='comment'&gt;
+  &lt;div class='comment' expr:id='&amp;quot;c&amp;quot; + data:comment.id'&gt;
+    &lt;b:include cond='data:blog.enabledCommentProfileImages' name='commentAuthorAvatar'/&gt;
+
+    &lt;div class='comment-block'&gt;
+      &lt;div class='comment-author'&gt;
+        &lt;b:if cond='data:comment.authorUrl'&gt;
+          &lt;b:message name='messages.authorSaidWithLink'&gt;
+            &lt;b:param expr:value='data:comment.author' name='authorName'/&gt;
+            &lt;b:param expr:value='data:comment.authorUrl' name='authorUrl'/&gt;
+          &lt;/b:message&gt;
+        &lt;b:else/&gt;
+          &lt;b:message name='messages.authorSaid'&gt;
+            &lt;b:param expr:value='data:comment.author' name='authorName'/&gt;
+          &lt;/b:message&gt;
+        &lt;/b:if&gt;
+      &lt;/div&gt;
+      &lt;div expr:class='&amp;quot;comment-body&amp;quot; + (data:comment.isDeleted ? &amp;quot; deleted&amp;quot; : &amp;quot;&amp;quot;)'&gt;
+        &lt;data:comment.body/&gt;
+      &lt;/div&gt;
+      &lt;div class='comment-footer'&gt;
+        &lt;span class='comment-timestamp'&gt;
+          &lt;a expr:href='data:comment.url' title='comment permalink'&gt;
+            &lt;data:comment.timestamp/&gt;
+          &lt;/a&gt;
+          &lt;b:include data='comment' name='commentDeleteIcon'/&gt;
+        &lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+  &lt;b:includable id='commentList' var='comments'&gt;
+  &lt;div id='comments-block'&gt;
+    &lt;b:loop values='data:comments' var='comment'&gt;
+      &lt;b:include data='comment' name='commentItem'/&gt;
+    &lt;/b:loop&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+  &lt;b:includable id='commentPicker' var='post'&gt;
+  &lt;b:if cond='data:post.showThreadedComments'&gt;
+    &lt;b:include data='post' name='threadedComments'/&gt;
+  &lt;b:else/&gt;
+    &lt;b:include data='post' name='comments'/&gt;
+  &lt;/b:if&gt;
+&lt;/b:includable&gt;
+  &lt;b:includable id='comments' var='post'&gt;
+  &lt;section expr:class='&amp;quot;comments&amp;quot; + (data:post.embedCommentForm ? &amp;quot; embed&amp;quot; : &amp;quot;&amp;quot;)' expr:data-num-comments='data:post.numberOfComments' id='comments'&gt;
+    &lt;a name='comments'/&gt;
+    &lt;b:if cond='data:post.allowComments'&gt;
+
+      &lt;b:include name='commentsTitle'/&gt;
+
+      &lt;div expr:id='data:widget.instanceId + &amp;quot;_comments-block-wrapper&amp;quot;'&gt;
+        &lt;b:include cond='data:post.comments' data='post.comments' name='commentList'/&gt;
+      &lt;/div&gt;
+
+      &lt;b:if cond='data:post.commentPagingRequired'&gt;
+        &lt;div class='paging-control-container'&gt;
+          &lt;b:if cond='data:post.hasOlderLinks'&gt;
+            &lt;a expr:class='data:post.oldLinkClass' expr:href='data:post.oldestLinkUrl'&gt;
+              &lt;data:messages.oldest/&gt;
+            &lt;/a&gt;
+            &lt;a expr:class='data:post.oldLinkClass' expr:href='data:post.olderLinkUrl'&gt;
+              &lt;data:messages.older/&gt;
+            &lt;/a&gt;
+          &lt;/b:if&gt;
+
+          &lt;span class='comment-range-text'&gt;
+            &lt;data:post.commentRangeText/&gt;
+          &lt;/span&gt;
+
+          &lt;b:if cond='data:post.hasNewerLinks'&gt;
+            &lt;a expr:class='data:post.newLinkClass' expr:href='data:post.newerLinkUrl'&gt;
+              &lt;data:messages.newer/&gt;
+            &lt;/a&gt;
+            &lt;a expr:class='data:post.newLinkClass' expr:href='data:post.newestLinkUrl'&gt;
+              &lt;data:messages.newest/&gt;
+            &lt;/a&gt;
+          &lt;/b:if&gt;
+        &lt;/div&gt;
+      &lt;/b:if&gt;
+
+      &lt;div class='footer'&gt;
+        &lt;b:if cond='data:post.embedCommentForm'&gt;
+          &lt;b:if cond='data:post.allowNewComments'&gt;
+            &lt;b:include data='post' name='commentForm'/&gt;
+          &lt;b:else/&gt;
+            &lt;data:post.noNewCommentsText/&gt;
+          &lt;/b:if&gt;
+        &lt;b:else/&gt;
+          &lt;b:if cond='data:post.allowComments'&gt;
+            &lt;b:include data='post' name='addComments'/&gt;
+          &lt;/b:if&gt;
+        &lt;/b:if&gt;
+      &lt;/div&gt;
+    &lt;/b:if&gt;
+    &lt;b:if cond='data:showCmtPopup'&gt;
+      &lt;div id='comment-popup'&gt;
+        &lt;iframe allowtransparency='allowtransparency' frameborder='0' id='comment-actions' name='comment-actions' scrolling='no'&gt;
+        &lt;/iframe&gt;
+      &lt;/div&gt;
+    &lt;/b:if&gt;
+  &lt;/section&gt;
+&lt;/b:includable&gt;
+  &lt;b:includable id='commentsTitle'&gt;
+  &lt;h3 class='title'&gt;&lt;data:messages.comments/&gt;&lt;/h3&gt;
+&lt;/b:includable&gt;
+  &lt;b:includable id='feedLinks'&gt;
+  &lt;b:if cond='!data:view.isPost'&gt; &lt;!-- Blog feed links --&gt;
+    &lt;b:if cond='data:feedLinks'&gt;
+      &lt;div class='blog-feeds'&gt;
+        &lt;b:include data='feedLinks' name='feedLinksBody'/&gt;
+      &lt;/div&gt;
+    &lt;/b:if&gt;
+  &lt;b:else/&gt; &lt;!--Post feed links --&gt;
+    &lt;div class='post-feeds'&gt;
+      &lt;b:loop values='data:posts' var='post'&gt;
+        &lt;b:if cond='data:post.allowComments and data:post.feedLinks'&gt;
+          &lt;b:include data='post.feedLinks' name='feedLinksBody'/&gt;
+        &lt;/b:if&gt;
+      &lt;/b:loop&gt;
+    &lt;/div&gt;
+  &lt;/b:if&gt;
+&lt;/b:includable&gt;
+  &lt;b:includable id='feedLinksBody' var='links'&gt;
+  &lt;div class='feed-links'&gt;
+  &lt;data:messages.subscribeTo/&gt;
+  &lt;b:loop values='data:links' var='f'&gt;
+     &lt;a class='feed-link' expr:href='data:f.url' expr:type='data:f.mimeType' target='_blank'&gt;&lt;data:f.name/&gt; (&lt;data:f.feedType/&gt;)&lt;/a&gt;
+  &lt;/b:loop&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+  &lt;b:includable id='homePageLink'&gt;
+  &lt;a class='home-link' expr:href='data:blog.homepageUrl'&gt;
+    &lt;data:messages.home/&gt;
+  &lt;/a&gt;
+&lt;/b:includable&gt;
+  &lt;b:includable id='iframeComments' var='post'&gt;
+  &lt;!-- G+ comments, no longer available. The includable is retained for backwards-compatibility. --&gt;
+&lt;/b:includable&gt;
+  &lt;b:includable id='inlineAd' var='post'&gt;
+  &lt;b:if cond='!data:view.isPreview'&gt;
+    &lt;b:if cond='data:this.adCode or data:this.adClientId or data:blog.adsenseClientId'&gt;
+      &lt;!-- Ad --&gt;
+      &lt;div class='inline-ad'&gt;
+        &lt;b:if cond='data:this.adCode != &amp;quot;&amp;quot;'&gt;
+          &lt;data:this.adCode/&gt;
+        &lt;b:else/&gt;
+          &lt;b:include cond='data:this.adClientId or data:blog.adsenseClientId' name='defaultAdUnit'/&gt;
+        &lt;/b:if&gt;
+      &lt;/div&gt;
+    &lt;/b:if&gt;
+  &lt;b:else/&gt;
+    &lt;div class='inline-ad'&gt;
+      &lt;div class='inline-ad-placeholder'&gt;
+        &lt;span&gt;&lt;b:message name='messages.adsGoHere'/&gt;&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/b:if&gt;
+&lt;/b:includable&gt;
+  &lt;b:includable id='nextPageLink'&gt;
+  &lt;a class='blog-pager-older-link' expr:href='data:olderPageUrl' expr:id='data:widget.instanceId + &amp;quot;_blog-pager-older-link&amp;quot;' expr:title='data:messages.olderPosts'&gt;
+    &lt;data:messages.olderPosts/&gt;
+  &lt;/a&gt;
+&lt;/b:includable&gt;
+  &lt;b:includable id='post' var='post'&gt;
+  &lt;div class='post'&gt;
+    &lt;b:include data='post' name='postMeta'/&gt;
+    &lt;b:include data='post' name='postTitle'/&gt;
+    &lt;b:include name='headerByline'/&gt;
+    &lt;b:if cond='data:view.isSingleItem'&gt;
+      &lt;b:include data='post' name='postBody'/&gt;
+    &lt;b:else/&gt;
+      &lt;b:include data='post' name='postBodySnippet'/&gt;
+      &lt;b:include data='post' name='postJumpLink'/&gt;
+    &lt;/b:if&gt;
+    &lt;b:include data='post' name='postFooter'/&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+  &lt;b:includable id='postBody' var='post'&gt;
+  &lt;!-- If metaDescription is empty, use the post body as the schema.org description too, for G+/FB snippeting. --&gt;
+  &lt;div class='post-body entry-content float-container' expr:id='&amp;quot;post-body-&amp;quot; + data:post.id'&gt;
+    &lt;data:post.body/&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+  &lt;b:includable id='postBodySnippet' var='post'&gt;
+  &lt;b:include data='post' name='postBody'/&gt;
+&lt;/b:includable&gt;
+  &lt;b:includable id='postCommentsAndAd' var='post'&gt;
+  &lt;article class='post-outer-container'&gt;
+    &lt;!-- Post title and body --&gt;
+    &lt;div class='post-outer'&gt;
+      &lt;b:include data='post' name='post'/&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Comments --&gt;
+    &lt;b:include cond='data:view.isSingleItem' data='post' name='commentPicker'/&gt;
+
+    &lt;!-- Show ad inside post container, after comments, if single item. --&gt;
+    &lt;b:include cond='data:view.isSingleItem and data:post.includeAd' data='post' name='inlineAd'/&gt;
+  &lt;/article&gt;
+
+  &lt;!-- Show ad outside post container (between posts) for feed pages. --&gt;
+  &lt;b:include cond='data:view.isMultipleItems and data:post.includeAd' data='post' name='inlineAd'/&gt;
+&lt;/b:includable&gt;
+  &lt;b:includable id='postCommentsLink'&gt;
+  &lt;b:if cond='data:view.isMultipleItems'&gt;
+    &lt;span class='byline post-comment-link container'&gt;
+      &lt;b:include cond='data:post.commentSource != 1' name='commentsLink'/&gt;
+    &lt;/span&gt;
+  &lt;/b:if&gt;
+&lt;/b:includable&gt;
+  &lt;b:includable id='postFooter' var='post'&gt;
+  &lt;div class='post-footer'&gt;
+    &lt;b:include name='footerBylines'/&gt;
+    &lt;b:include data='post' name='postFooterAuthorProfile'/&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+  &lt;b:includable id='postFooterAuthorProfile' var='post'&gt;
+  &lt;b:if cond='data:post.author.aboutMe and data:view.isPost'&gt;
+    &lt;div class='author-profile'&gt;
+      &lt;b:if cond='data:post.author.authorPhoto.url'&gt;
+        &lt;img class='author-image' expr:src='data:post.author.authorPhoto.url' width='50px'/&gt;
+        &lt;div class='author-about'&gt;
+          &lt;b:include data='post' name='aboutPostAuthor'/&gt;
+        &lt;/div&gt;
+      &lt;b:else/&gt;
+        &lt;b:include data='post' name='aboutPostAuthor'/&gt;
+      &lt;/b:if&gt;
+    &lt;/div&gt;
+  &lt;/b:if&gt;
+&lt;/b:includable&gt;
+  &lt;b:includable id='postHeader' var='post'&gt;
+  &lt;b:include name='headerByline'/&gt;
+&lt;/b:includable&gt;
+  &lt;b:includable id='postMeta' var='post'&gt;
+  &lt;b:include data='post' name='postMetadataJSON'/&gt;
+&lt;/b:includable&gt;
+  &lt;b:includable id='postPagination'&gt;
+  &lt;div class='blog-pager container' id='blog-pager'&gt;
+    &lt;b:include cond='data:newerPageUrl' name='previousPageLink'/&gt;
+    &lt;b:include cond='data:olderPageUrl' name='nextPageLink'/&gt;
+    &lt;b:include cond='data:view.url != data:blog.homepageUrl' name='homePageLink'/&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+  &lt;b:includable id='postTitle' var='post'&gt;
+  &lt;a expr:name='data:post.id'/&gt;
+  &lt;b:if cond='data:post.title != &amp;quot;&amp;quot;'&gt;
+    &lt;h3 class='post-title entry-title'&gt;
+      &lt;b:if cond='data:post.link or (data:post.url and data:view.url != data:post.url)'&gt;
+        &lt;a expr:href='data:post.link ?: data:post.url'&gt;&lt;data:post.title/&gt;&lt;/a&gt;
+      &lt;b:else/&gt;
+        &lt;data:post.title/&gt;
+      &lt;/b:if&gt;
+    &lt;/h3&gt;
+  &lt;/b:if&gt;
+&lt;/b:includable&gt;
+  &lt;b:includable id='previousPageLink'&gt;
+  &lt;a class='blog-pager-newer-link' expr:href='data:newerPageUrl' expr:id='data:widget.instanceId + &amp;quot;_blog-pager-newer-link&amp;quot;' expr:title='data:messages.newerPosts'&gt;
+    &lt;data:messages.newerPosts/&gt;
+  &lt;/a&gt;
+&lt;/b:includable&gt;
+  &lt;b:includable id='threadedCommentForm' var='post'&gt;
+  &lt;div class='comment-form'&gt;
+    &lt;a name='comment-form'/&gt;
+    &lt;h4 id='comment-post-message'&gt;&lt;data:messages.postAComment/&gt;&lt;/h4&gt;
+    &lt;b:if cond='data:this.messages.blogComment != &amp;quot;&amp;quot;'&gt;
+      &lt;p&gt;&lt;data:this.messages.blogComment/&gt;&lt;/p&gt;
+    &lt;/b:if&gt;
+    &lt;b:include data='post' name='commentFormIframeSrc'/&gt;
+    &lt;iframe allowtransparency='allowtransparency' class='blogger-iframe-colorize blogger-comment-from-post' expr:height='data:cmtIframeInitialHeight ?: &amp;quot;90px&amp;quot;' frameborder='0' id='comment-editor' name='comment-editor' src='' width='100%'/&gt;
+    &lt;data:post.cmtfpIframe/&gt;
+    &lt;script type='text/javascript'&gt;
+      BLOG_CMT_createIframe(&amp;#39;&lt;data:post.appRpcRelayPath/&gt;&amp;#39;);
+    &lt;/script&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+  &lt;b:includable id='threadedCommentJs' var='post'&gt;
+  &lt;script async='async' expr:src='data:post.commentSrc' type='text/javascript'/&gt;
+  &lt;b:template-script inline='true' name='threaded_comments'/&gt;
+  &lt;script type='text/javascript'&gt;
+    blogger.widgets.blog.initThreadedComments(
+        &lt;data:post.commentJso/&gt;,
+        &lt;data:post.commentMsgs/&gt;,
+        &lt;data:post.commentConfig/&gt;);
+  &lt;/script&gt;
+&lt;/b:includable&gt;
+  &lt;b:includable id='threadedComments' var='post'&gt;
+  &lt;section class='comments threaded' expr:data-embed='data:post.embedCommentForm' expr:data-num-comments='data:post.numberOfComments' id='comments'&gt;
+    &lt;a name='comments'/&gt;
+
+    &lt;b:include name='commentsTitle'/&gt;
+
+    &lt;div class='comments-content'&gt;
+      &lt;b:if cond='data:post.embedCommentForm'&gt;
+        &lt;b:include data='post' name='threadedCommentJs'/&gt;
+      &lt;/b:if&gt;
+      &lt;div id='comment-holder'&gt;
+         &lt;data:post.commentHtml/&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;p class='comment-footer'&gt;
+      &lt;b:if cond='data:post.allowNewComments'&gt;
+        &lt;b:include data='post' name='threadedCommentForm'/&gt;
+      &lt;b:else/&gt;
+        &lt;data:post.noNewCommentsText/&gt;
+      &lt;/b:if&gt;
+      &lt;b:if cond='data:post.showManageComments'&gt;
+        &lt;b:include data='post' name='manageComments'/&gt;
+      &lt;/b:if&gt;
+    &lt;/p&gt;
+
+    &lt;b:if cond='data:showCmtPopup'&gt;
+      &lt;div id='comment-popup'&gt;
+        &lt;iframe allowtransparency='allowtransparency' frameborder='0' id='comment-actions' name='comment-actions' scrolling='no'&gt;
+        &lt;/iframe&gt;
+      &lt;/div&gt;
+    &lt;/b:if&gt;
+  &lt;/section&gt;
+&lt;/b:includable&gt;
+&lt;/b:widget&gt;
+&lt;b:widget cond='data:view.isPost' id='HTML3' locked='true' title='Ads Bottom' type='HTML' version='2' visible='true'&gt;
+  &lt;b:widget-settings&gt;
+    &lt;b:widget-setting name='content'&gt;ads here&lt;/b:widget-setting&gt;
+  &lt;/b:widget-settings&gt;
+  &lt;b:includable id='main'&gt;
+								&lt;section class='container mb-3'&gt;
+									&lt;div class='row justify-content-center'&gt;
+										&lt;div class='col-12 col-md-7'&gt;
+											&lt;div class='ads-horizontal'&gt;
+												&lt;data:content/&gt;
+											&lt;/div&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+								&lt;/section&gt;
+							&lt;/b:includable&gt;
+&lt;/b:widget&gt;
+&lt;b:widget cond='data:view.isPage' id='ContactForm1' locked='true' title='Contact' type='ContactForm' version='2' visible='true'&gt;
+  &lt;b:includable id='main'&gt;
+
+								&lt;div aria-hidden='true' aria-labelledby='modalContactTitle' class='modal fade' id='modalContact' tabindex='-1'&gt;
+									&lt;div class='modal-dialog modal-sm modal-dialog-centered'&gt;
+										&lt;div class='modal-content'&gt;
+											&lt;div class='modal-header'&gt;
+												&lt;strong class='modal-title text-dark' id='modalContactTitle'&gt;
+													&lt;data:title/&gt;
+												&lt;/strong&gt;
+												&lt;button aria-label='Close' class='btn-close' data-bs-dismiss='modal' type='button'/&gt;
+											&lt;/div&gt;
+											&lt;div class='modal-body'&gt;
+
+												&lt;form name='contact-form'&gt;  
+
+													&lt;div class='mb-3'&gt;
+														&lt;input class='form-control contact-form-name' expr:id='data:widget.instanceId + &amp;quot;_contact-form-name&amp;quot;' expr:placeholder='data:contactFormNameMsg' name='name' type='text'/&gt;
+													&lt;/div&gt;
+
+													&lt;div class='mb-3'&gt;
+														&lt;input class='form-control contact-form-email' expr:id='data:widget.instanceId + &amp;quot;_contact-form-email&amp;quot;' expr:placeholder='data:contactFormEmailMsg' name='email' type='email'/&gt;
+													&lt;/div&gt;
+
+													&lt;div class='mb-3'&gt;
+														&lt;textarea class='form-control contact-form-email-message' cols='25' expr:id='data:widget.instanceId + &amp;quot;_contact-form-email-message&amp;quot;' expr:placeholder='data:contactFormMessageMsg' name='email-message' rows='5'/&gt;
+													&lt;/div&gt;
+
+													&lt;input class='btn btn-outline-primary contact-form-button contact-form-button-submit' expr:id='data:widget.instanceId + &amp;quot;_contact-form-submit&amp;quot;' expr:value='data:contactFormSendMsg' type='button'/&gt;  
+
+													&lt;div class='mt-2 text-danger'&gt;
+														&lt;div class='contact-form-error-message' expr:id='data:widget.instanceId + &amp;quot;_contact-form-error-message&amp;quot;'/&gt;
+														&lt;div class='contact-form-success-message' expr:id='data:widget.instanceId + &amp;quot;_contact-form-success-message&amp;quot;'/&gt;
+													&lt;/div&gt;
+
+												&lt;/form&gt;
+
+											&lt;/div&gt;											
+										&lt;/div&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+							&lt;/b:includable&gt;
+  &lt;b:includable id='content'/&gt;
+&lt;/b:widget&gt;
+&lt;/b:section&gt;
+				&lt;/b:if&gt;
+
+				&lt;b:comment&gt;main archive, search, error&lt;/b:comment&gt;
+				&lt;b:if cond='data:view.isArchive OR data:view.isSearch OR data:view.isError'&gt;
+					&lt;!-- redirect to home --&gt;
+					&lt;section class='container d-flex flex-column h-100'&gt;
+						&lt;div class='row justify-content-center my-auto'&gt;
+							&lt;div class='col-12 col-md-7 text-center'&gt;
+								&lt;p class='fs-2 fw-bold'&gt;This page not use On Safelink :)&lt;/p&gt;
+								&lt;a class='text-decoration-none fw-bold' expr:href='data:blog.homepageUrl'&gt;Back to Home&lt;/a&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+					&lt;/section&gt;
+				&lt;/b:if&gt;
+
+				&lt;b:comment&gt;credit&lt;/b:comment&gt;
+				&lt;b:section id='WidgetBottom' showaddelement='false'&gt;
+&lt;b:widget id='Text1' locked='true' title='Credit' type='Text' version='2' visible='true'&gt;
+  &lt;b:widget-settings&gt;
+    &lt;b:widget-setting name='content'&gt;2022&lt;/b:widget-setting&gt;
+  &lt;/b:widget-settings&gt;
+  &lt;b:includable id='main'&gt;
+							&lt;footer class='text-center mb-3'&gt;				
+								&lt;p class='m-0'&gt;
+									Copyright &amp;#169;&lt;data:content/&gt; &lt;a class='text-decoration-none text-dark' expr:href='data:blog.homepageUrl'&gt;&lt;data:blog.title/&gt;&lt;/a&gt;
+								&lt;/p&gt;
+								&lt;small&gt;
+									&lt;data:messages.poweredByBlogger/&gt; &amp;#183; &lt;a class='text-decoration-none fw-bold' href='https://github.com/kurteyki/SafePlatinum' rel='nofollow noopener' target='_blank'&gt;
+									&lt;i class='bi bi-layout-text-window-reverse'/&gt; by irfan.ycd (v2.0)
+								&lt;/a&gt; 
+							&lt;/small&gt;
+						&lt;/footer&gt;	
+					&lt;/b:includable&gt;
+&lt;/b:widget&gt;
+&lt;b:widget id='HTML4' locked='true' title='Configuration' type='HTML' version='2' visible='true'&gt;
+  &lt;b:widget-settings&gt;
+    &lt;b:widget-setting name='content'&gt;const safeLinkConfig = {
+	secretKey: &amp;#39;rahasia:v&amp;#39;,
+	parameterName: &amp;#39;f&amp;#39;,
+	countDownTimer: 8
+};&lt;/b:widget-setting&gt;
+  &lt;/b:widget-settings&gt;
+  &lt;b:includable id='main'&gt;
+						&lt;script&gt;
+							/* safeLink config */
+							&lt;data:content/&gt;
+						&lt;/script&gt;
+					&lt;/b:includable&gt;
+&lt;/b:widget&gt;
+&lt;b:widget id='HTML5' locked='true' title='HTML Script' type='HTML' version='2' visible='true'&gt;
+  &lt;b:widget-settings&gt;
+    &lt;b:widget-setting name='content'&gt;&lt;![CDATA[&lt;!-- insert you ads script here --&gt;]]&gt;&lt;/b:widget-setting&gt;
+  &lt;/b:widget-settings&gt;
+  &lt;b:includable id='main'&gt;
+						&lt;data:content/&gt;
+					&lt;/b:includable&gt;
+&lt;/b:widget&gt;
+&lt;/b:section&gt;		
+
+			&lt;b:comment&gt;noScript&lt;/b:comment&gt;
+			&lt;noscript&gt;
+				&lt;style&gt;
+					.noscript {
+					position: fixed;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					background: rgb(0 0 0 / 50%);
+					z-index: 999;
+					}
+
+					/* remove safelink */
+					#main-getlink, #main-gotolink{display: none}
+				&lt;/style&gt;
+				&lt;div class='noscript d-flex flex-column h-100'&gt;
+					&lt;div class='card m-auto'&gt;
+						&lt;div class='card-body p-5 text-center'&gt;
+							&lt;strong class='fs-3 mb-3'&gt;
+								Javascript has Disable, Please Enable !
+							&lt;/strong&gt;
+							&lt;p&gt;
+								This web run use javascript for work perfectly, please enable javascript
+							&lt;/p&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/noscript&gt;
+
+		&lt;/main&gt;
+
+		&lt;b:comment&gt;JS External&lt;/b:comment&gt;
+		&lt;b:include name='jsx'/&gt;
+
+		&lt;b:comment&gt;JS Internal&lt;/b:comment&gt;
+		&lt;script&gt;
+			const blogId = &amp;quot;&lt;data:blog.blogId/&gt;&amp;quot;;
+			//&lt;![CDATA[    
+			/* for autoSafelinkCode */
+			$("#autosafelink").on("shown.bs.modal", function(){
+				$("#autosafelinkCode").text(`&lt;script&gt;const autoSafeLink = {
+	linkException: 'blogger.com,facebook.com,instagram.com,google.com,twitter.com,javascript:;,mailto:',
+	onlyThisLink: '', // when this value is empty, will replace all link and ignore exception
+	safeLinkConfig: {
+		blogId: '${blogId}',
+		secretKey: '${safeLinkConfig.secretKey}',
+		parameterName : '${safeLinkConfig.parameterName}'
+	}
+}; 	
+&lt;/scr${'i'}pt&gt;
+&lt;script src="https://cdn.jsdelivr.net/gh/kurteyki/SafePlatinum@da631c2cde4849cc0c40fa90c7b02c2e072f6daf/autosafelink.js"&gt;&lt;/scr${'i'}pt&gt;`);
+			})
+			//]]&gt;			
+		&lt;/script&gt;	
+
+		&lt;b:comment&gt;JS Homepage&lt;/b:comment&gt;
+		&lt;b:include cond='data:view.isHomepage' name='jsh'/&gt;			
+
+		&lt;b:comment&gt;JS Post&lt;/b:comment&gt;
+		&lt;b:include cond='data:view.isPost' name='jsp'/&gt;				
+
+		&lt;b:comment&gt;Define Default Code Here&lt;/b:comment&gt;
+		&lt;b:defaultmarkups&gt;
+			&lt;b:defaultmarkup type='Common'&gt;
+				&lt;b:includable id='cssx'&gt;
+					&lt;b:comment&gt;insert css external here&lt;/b:comment&gt;
+					&lt;link crossorigin='anonymous' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0-beta1/css/bootstrap.min.css' integrity='sha512-o/MhoRPVLExxZjCFVBsm17Pkztkzmh7Dp8k7/3JrtNCHh0AQ489kwpfA3dPSHzKDe8YCuEhxXq3Y71eb/o6amg==' referrerpolicy='no-referrer' rel='stylesheet'/&gt;
+					&lt;link crossorigin='anonymous' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.3/font/bootstrap-icons.min.css' integrity='sha512-YzwGgFdO1NQw1CZkPoGyRkEnUTxPSbGWXvGiXrWk8IeSqdyci0dEDYdLLjMxq1zCoU0QBa4kHAFiRhUL3z2bow==' referrerpolicy='no-referrer' rel='stylesheet'/&gt;
+
+					&lt;link href='https://cdn.jsdelivr.net/gh/kurteyki/SafePlatinum@da631c2cde4849cc0c40fa90c7b02c2e072f6daf/app.css' rel='stylesheet'/&gt;
+				&lt;/b:includable&gt;
+				&lt;b:includable id='jsx'&gt;
+					&lt;b:comment&gt;insert js external here&lt;/b:comment&gt;	
+					&lt;script crossorigin='anonymous' integrity='sha512-Hqe3s+yLpqaBbXM6VA0cnj/T56ii5YjNrMT9v+us11Q81L0wzUG0jEMNECtugqNu2Uq5MSttCg0p4KK0kCPVaQ==' referrerpolicy='no-referrer' src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0-beta1/js/bootstrap.min.js'/&gt;	
+					&lt;script crossorigin='anonymous' integrity='sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==' referrerpolicy='no-referrer' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'/&gt;		
+					&lt;script crossorigin='anonymous' integrity='sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA==' referrerpolicy='no-referrer' src='https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js'/&gt;
+
+					&lt;script src='https://cdn.jsdelivr.net/gh/kurteyki/SafePlatinum@da631c2cde4849cc0c40fa90c7b02c2e072f6daf/app.js'/&gt;
+
+				&lt;/b:includable&gt;	
+				&lt;b:includable id='jsh'&gt;		
+					&lt;script src='https://cdn.jsdelivr.net/gh/kurteyki/SafePlatinum@da631c2cde4849cc0c40fa90c7b02c2e072f6daf/app-h.js'/&gt;
+				&lt;/b:includable&gt;
+				&lt;b:includable id='jsp'&gt;	
+					&lt;script src='https://cdn.jsdelivr.net/gh/kurteyki/SafePlatinum@da631c2cde4849cc0c40fa90c7b02c2e072f6daf/app-p.js'/&gt;				
+				&lt;/b:includable&gt;				
+			&lt;/b:defaultmarkup&gt;			
+		&lt;/b:defaultmarkups&gt;			
+
+	&lt;/body&gt; &lt;!-- // break
+--&gt;	
+&lt;/html&gt;</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/template/default'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/template/default'/><link rel='alternate' type='text/html' href='http://safeplatinum.blogspot.com/'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.settings.BLOG_PUBLISHING_MODE</id><published>2017-08-31T04:08:22.104+07:00</published><updated>2022-08-25T02:41:35.413+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>The type of publishing done for this blog.</title><content type='text'>PUBLISH_MODE_BLOGSPOT</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_PUBLISHING_MODE'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_PUBLISHING_MODE'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.settings.BLOG_ADMIN_PERMISSION</id><published>2017-08-31T04:08:22.104+07:00</published><updated>2022-08-25T02:41:35.413+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>The list of administrators' emails for the blog.</title><content type='text'>programmer.irfaan@gmail.com</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_ADMIN_PERMISSION'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_ADMIN_PERMISSION'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.settings.BLOG_ADULT_CONTENT</id><published>2017-08-31T04:08:22.104+07:00</published><updated>2022-08-25T02:41:35.413+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Whether this blog contains adult content</title><content type='text'>false</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_ADULT_CONTENT'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_ADULT_CONTENT'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.settings.BLOG_ANALYTICS_ACCOUNT_NUMBER</id><published>2017-08-31T04:08:22.104+07:00</published><updated>2022-08-25T02:41:35.413+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Blog's Google Analytics account number</title><content type='text'></content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_ANALYTICS_ACCOUNT_NUMBER'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_ANALYTICS_ACCOUNT_NUMBER'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.settings.BLOG_ARCHIVE_DATE_FORMAT</id><published>2017-08-31T04:08:22.104+07:00</published><updated>2022-08-25T02:41:35.413+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>The number of the archive index date format</title><content type='text'>9</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_ARCHIVE_DATE_FORMAT'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_ARCHIVE_DATE_FORMAT'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.settings.BLOG_ARCHIVE_FREQUENCY</id><published>2017-08-31T04:08:22.104+07:00</published><updated>2022-08-25T02:41:35.413+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>How frequently this blog should be archived</title><content type='text'>MONTHLY</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_ARCHIVE_FREQUENCY'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_ARCHIVE_FREQUENCY'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.settings.BLOG_AUTHOR_PERMISSION</id><published>2017-08-31T04:08:22.104+07:00</published><updated>2022-08-25T02:41:35.413+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>The list of authors' emails who have permission to publish.</title><content type='text'></content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_AUTHOR_PERMISSION'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_AUTHOR_PERMISSION'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.settings.BLOG_BY_POST_ARCHIVING</id><published>2017-08-31T04:08:22.104+07:00</published><updated>2022-08-25T02:41:35.413+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Whether to provide an archive page for each post</title><content type='text'>true</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_BY_POST_ARCHIVING'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_BY_POST_ARCHIVING'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.settings.BLOG_COMMENT_ACCESS</id><published>2017-08-31T04:08:22.104+07:00</published><updated>2022-08-25T02:41:35.413+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Who can comment</title><content type='text'>BLOGGERS</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_COMMENT_ACCESS'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_COMMENT_ACCESS'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.settings.BLOG_COMMENT_CAPTCHA</id><published>2017-08-31T04:08:22.104+07:00</published><updated>2022-08-25T02:41:35.413+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Whether to require commenters to complete a Captcha</title><content type='text'>true</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_COMMENT_CAPTCHA'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_COMMENT_CAPTCHA'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.settings.BLOG_COMMENT_EMAIL</id><published>2017-08-31T04:08:22.104+07:00</published><updated>2022-08-25T02:41:35.413+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>List of e-mail addresses to send notifications of new comments to</title><content type='text'></content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_COMMENT_EMAIL'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_COMMENT_EMAIL'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.settings.BLOG_COMMENT_FEED</id><published>2017-08-31T04:08:22.104+07:00</published><updated>2022-08-25T02:41:35.413+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>The type of feed to provide for blog comments</title><content type='text'>FULL</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_COMMENT_FEED'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_COMMENT_FEED'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.settings.BLOG_COMMENT_FORM_LOCATION</id><published>2017-08-31T04:08:22.104+07:00</published><updated>2022-08-25T02:41:35.413+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Blog comment form location</title><content type='text'>EMBEDDED_IFRAME</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_COMMENT_FORM_LOCATION'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_COMMENT_FORM_LOCATION'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.settings.BLOG_COMMENT_MESSAGE</id><published>2017-08-31T04:08:22.104+07:00</published><updated>2022-08-25T02:41:35.413+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Blog comment message</title><content type='text'></content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_COMMENT_MESSAGE'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_COMMENT_MESSAGE'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.settings.BLOG_COMMENT_MODERATION</id><published>2017-08-31T04:08:22.104+07:00</published><updated>2022-08-25T02:41:35.413+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Whether to enable comment moderation</title><content type='text'>DISABLED</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_COMMENT_MODERATION'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_COMMENT_MODERATION'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.settings.BLOG_COMMENT_MODERATION_DELAY</id><published>2017-08-31T04:08:22.104+07:00</published><updated>2022-08-25T02:41:35.413+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Number of days after which new comments are subject to moderation</title><content type='text'>14</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_COMMENT_MODERATION_DELAY'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_COMMENT_MODERATION_DELAY'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.settings.BLOG_COMMENT_MODERATION_EMAIL</id><published>2017-08-31T04:08:22.104+07:00</published><updated>2022-08-25T02:41:35.413+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Email address to send notifications of new comments needing moderation to</title><content type='text'></content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_COMMENT_MODERATION_EMAIL'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_COMMENT_MODERATION_EMAIL'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.settings.BLOG_COMMENT_PROFILE_IMAGES</id><published>2017-08-31T04:08:22.104+07:00</published><updated>2022-08-25T02:41:35.413+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Whether to show profile images in comments</title><content type='text'>true</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_COMMENT_PROFILE_IMAGES'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_COMMENT_PROFILE_IMAGES'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.settings.BLOG_COMMENTS_ALLOWED</id><published>2017-08-31T04:08:22.104+07:00</published><updated>2022-08-25T02:41:35.413+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Whether to show comments</title><content type='text'>true</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_COMMENTS_ALLOWED'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_COMMENTS_ALLOWED'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.settings.BLOG_COMMENTS_TIME_STAMP_FORMAT</id><published>2017-08-31T04:08:22.104+07:00</published><updated>2022-08-25T02:41:35.413+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Comment time stamp format number</title><content type='text'>29</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_COMMENTS_TIME_STAMP_FORMAT'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_COMMENTS_TIME_STAMP_FORMAT'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.settings.BLOG_CONVERT_LINE_BREAKS</id><published>2017-08-31T04:08:22.104+07:00</published><updated>2022-08-25T02:41:35.413+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Whether to convert line breaks into &lt;br /&gt; tags in post editor</title><content type='text'>true</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_CONVERT_LINE_BREAKS'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_CONVERT_LINE_BREAKS'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.settings.BLOG_CUSTOM_ADS_TXT</id><published>2017-08-31T04:08:22.104+07:00</published><updated>2022-08-25T02:41:35.413+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>The custom ads.txt content of the blog served to ads search engines.</title><content type='text'></content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_CUSTOM_ADS_TXT'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_CUSTOM_ADS_TXT'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.settings.BLOG_CUSTOM_ADS_TXT_ENABLED</id><published>2017-08-31T04:08:22.104+07:00</published><updated>2022-08-25T02:41:35.413+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Whether this blog serves custom ads.txt content to ads search engines.</title><content type='text'>false</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_CUSTOM_ADS_TXT_ENABLED'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_CUSTOM_ADS_TXT_ENABLED'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.settings.BLOG_CUSTOM_PAGE_NOT_FOUND</id><published>2017-08-31T04:08:22.104+07:00</published><updated>2022-08-25T02:41:35.413+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>The content served when the requested post or page is not found.</title><content type='text'></content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_CUSTOM_PAGE_NOT_FOUND'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_CUSTOM_PAGE_NOT_FOUND'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.settings.BLOG_CUSTOM_ROBOTS_TXT</id><published>2017-08-31T04:08:22.104+07:00</published><updated>2022-08-25T02:41:35.413+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>The custom robots.txt content of the blog served to search engines.</title><content type='text'>User-agent: Mediapartners-Google
+Disallow:
+
+User-agent: *
+Disallow: /search
+Allow: /
+
+Sitemap: https://safeplatinum.blogspot.com/feeds/posts/default?orderby=UPDATED</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_CUSTOM_ROBOTS_TXT'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_CUSTOM_ROBOTS_TXT'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.settings.BLOG_CUSTOM_ROBOTS_TXT_ENABLED</id><published>2017-08-31T04:08:22.104+07:00</published><updated>2022-08-25T02:41:35.413+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Whether this blog serves custom robots.txt content to search engines.</title><content type='text'>true</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_CUSTOM_ROBOTS_TXT_ENABLED'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_CUSTOM_ROBOTS_TXT_ENABLED'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.settings.BLOG_DATE_FORMAT</id><published>2017-08-31T04:08:22.104+07:00</published><updated>2022-08-25T02:41:35.413+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>The number of the date header format</title><content type='text'>26</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_DATE_FORMAT'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_DATE_FORMAT'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.settings.BLOG_DEFAULT_COMMENTS_MODE</id><published>2017-08-31T04:08:22.104+07:00</published><updated>2022-08-25T02:41:35.413+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Default comment mode for posts</title><content type='text'>DEFAULT_HAVE_COMMENTS</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_DEFAULT_COMMENTS_MODE'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_DEFAULT_COMMENTS_MODE'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.settings.BLOG_DESCRIPTION</id><published>2017-08-31T04:08:22.104+07:00</published><updated>2022-08-25T02:41:35.413+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>A description of the blog</title><content type='text'>Protect your link easy</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_DESCRIPTION'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_DESCRIPTION'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.settings.BLOG_EMAIL_POST_LINKS</id><published>2017-08-31T04:08:22.104+07:00</published><updated>2022-08-25T02:41:35.413+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Whether to show a link for users to e-mail posts</title><content type='text'>false</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_EMAIL_POST_LINKS'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_EMAIL_POST_LINKS'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.settings.BLOG_FEED_REDIRECT_URL</id><published>2017-08-31T04:08:22.104+07:00</published><updated>2022-08-25T02:41:35.413+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>URL to redirect post feed requests to</title><content type='text'></content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_FEED_REDIRECT_URL'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_FEED_REDIRECT_URL'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.settings.BLOG_FLOAT_ALIGNMENT</id><published>2017-08-31T04:08:22.104+07:00</published><updated>2022-08-25T02:41:35.413+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Whether float alignment is enabled for the blog</title><content type='text'>true</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_FLOAT_ALIGNMENT'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_FLOAT_ALIGNMENT'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.settings.BLOG_LOCALE</id><published>2017-08-31T04:08:22.104+07:00</published><updated>2022-08-25T02:41:35.413+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Language for this blog</title><content type='text'>en</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_LOCALE'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_LOCALE'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.settings.BLOG_MAX_NUM</id><published>2017-08-31T04:08:22.104+07:00</published><updated>2022-08-25T02:41:35.413+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Maximum number of things to show on the main page"</title><content type='text'>100</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_MAX_NUM'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_MAX_NUM'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.settings.BLOG_MAX_UNIT</id><published>2017-08-31T04:08:22.104+07:00</published><updated>2022-08-25T02:41:35.413+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Unit of things to show on the main page</title><content type='text'>POSTS</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_MAX_UNIT'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_MAX_UNIT'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.settings.BLOG_META_DESCRIPTION</id><published>2017-08-31T04:08:22.104+07:00</published><updated>2022-08-25T02:41:35.413+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>The meta description of the blog served to search engines.</title><content type='text'>Protect your link easy</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_META_DESCRIPTION'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_META_DESCRIPTION'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.settings.BLOG_META_DESCRIPTION_ENABLED</id><published>2017-08-31T04:08:22.104+07:00</published><updated>2022-08-25T02:41:35.413+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Whether this blog is served with meta descriptions.</title><content type='text'>true</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_META_DESCRIPTION_ENABLED'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_META_DESCRIPTION_ENABLED'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.settings.BLOG_NAME</id><published>2017-08-31T04:08:22.104+07:00</published><updated>2022-08-25T02:41:35.413+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>The name of the blog</title><content type='text'>Safe Platinum</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_NAME'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_NAME'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.settings.BLOG_PER_POST_FEED</id><published>2017-08-31T04:08:22.104+07:00</published><updated>2022-08-25T02:41:35.413+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>The type of feed to provide for per-post comments</title><content type='text'>FULL</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_PER_POST_FEED'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_PER_POST_FEED'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.settings.BLOG_POST_FEED</id><published>2017-08-31T04:08:22.104+07:00</published><updated>2022-08-25T02:41:35.413+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>The type of feed to provide for blog posts</title><content type='text'>FULL</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_POST_FEED'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_POST_FEED'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.settings.BLOG_POST_FEED_FOOTER</id><published>2017-08-31T04:08:22.104+07:00</published><updated>2022-08-25T02:41:35.413+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Footer to append to the end of each entry in the post feed</title><content type='text'></content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_POST_FEED_FOOTER'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_POST_FEED_FOOTER'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.settings.BLOG_POST_TEMPLATE</id><published>2017-08-31T04:08:22.104+07:00</published><updated>2022-08-25T02:41:35.413+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>The template for blog posts</title><content type='text'>&lt;!-- this is for get link button --&gt;
+&lt;div id="timer"&gt;&lt;/div&gt;
+&lt;div class="text-center"&gt;
+ &lt;button id='getlink' class='btn bt-success hidden' disabled=''&gt;Get Link&lt;/button&gt;
+ &lt;!-- iklan --&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+ &lt;!-- insert content here --&gt;
+&lt;/p&gt;
+
+&lt;!-- this is for ads and go to link --&gt;
+&lt;div class="text-center"&gt;
+ &lt;button id='gotolink' class='btn bt-success hidden' disabled=''&gt;Go to Link&lt;/button&gt;
+ &lt;div style='margin:auto;display:inline-block'&gt;
+  &lt;!-- iklan --&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+ &lt;!-- insert content here --&gt;
+&lt;/p&gt;</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_POST_TEMPLATE'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_POST_TEMPLATE'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.settings.BLOG_QUICK_EDITING</id><published>2017-08-31T04:08:22.104+07:00</published><updated>2022-08-25T02:41:35.413+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Whether Quick Editing is enabled</title><content type='text'>false</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_QUICK_EDITING'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_QUICK_EDITING'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.settings.BLOG_READ_ACCESS_MODE</id><published>2017-08-31T04:08:22.104+07:00</published><updated>2022-08-25T02:41:35.413+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>The access type for the readers of the blog.</title><content type='text'>PUBLIC</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_READ_ACCESS_MODE'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_READ_ACCESS_MODE'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.settings.BLOG_READER_PERMISSION</id><published>2017-08-31T04:08:22.104+07:00</published><updated>2022-08-25T02:41:35.413+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>The list of emails for users who have permission to read the blog.</title><content type='text'></content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_READER_PERMISSION'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_READER_PERMISSION'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.settings.BLOG_SEARCHABLE</id><published>2017-08-31T04:08:22.104+07:00</published><updated>2022-08-25T02:41:35.413+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Whether this blog should be indexed by search engines</title><content type='text'>true</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_SEARCHABLE'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_SEARCHABLE'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.settings.BLOG_SEND_EMAIL</id><published>2017-08-31T04:08:22.104+07:00</published><updated>2022-08-25T02:41:35.413+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Comma separated list of emails to send new blog posts to</title><content type='text'></content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_SEND_EMAIL'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_SEND_EMAIL'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.settings.BLOG_SHOW_URL</id><published>2017-08-31T04:08:22.104+07:00</published><updated>2022-08-25T02:41:35.413+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Whether to show a related link box in the post composer</title><content type='text'>false</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_SHOW_URL'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_SHOW_URL'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.settings.BLOG_SUBDOMAIN</id><published>2017-08-31T04:08:22.104+07:00</published><updated>2022-08-25T02:41:35.413+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>The BlogSpot subdomain under which to publish your blog</title><content type='text'>safeplatinum</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_SUBDOMAIN'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_SUBDOMAIN'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.settings.BLOG_TIME_STAMP_FORMAT</id><published>2017-08-31T04:08:22.104+07:00</published><updated>2022-08-25T02:41:35.413+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>The number of the time stamp format</title><content type='text'>15</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_TIME_STAMP_FORMAT'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_TIME_STAMP_FORMAT'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.settings.BLOG_TIME_ZONE</id><published>2017-08-31T04:08:22.104+07:00</published><updated>2022-08-25T02:41:35.413+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>The time zone for this blog</title><content type='text'>Asia/Jakarta</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_TIME_ZONE'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_TIME_ZONE'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.settings.BLOG_USE_LIGHTBOX</id><published>2017-08-31T04:08:22.104+07:00</published><updated>2022-08-25T02:41:35.413+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Whether to show images in the Lightbox when clicked</title><content type='text'>false</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_USE_LIGHTBOX'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/settings/BLOG_USE_LIGHTBOX'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.post-1936294927741090195</id><published>2022-07-02T21:43:00.000+07:00</published><updated>2022-07-02T21:43:57.154+07:00</updated><app:control xmlns:app='http://purl.org/atom/app#'><app:draft>yes</app:draft></app:control><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><title type='text'></title><content type='html'>&lt;!-- this is for get link button --&gt;&lt;div id="timer"&gt;&lt;/div&gt;&lt;div class="text-center"&gt; &lt;button id='getlink' class='btn bt-success hidden' disabled=''&gt;Get Link&lt;/button&gt; &lt;!-- iklan --&gt;&lt;/div&gt; &lt;p&gt; &lt;!-- insert content here --&gt;&lt;/p&gt; &lt;!-- this is for ads and go to link --&gt;&lt;div class="text-center"&gt; &lt;button id='gotolink' class='btn bt-success hidden' disabled=''&gt;Go to Link&lt;/button&gt; &lt;div style='margin:auto;display:inline-block'&gt;  &lt;!-- iklan --&gt; &lt;/div&gt;&lt;/div&gt; &lt;p&gt; &lt;!-- insert content here --&gt;&lt;/p&gt;</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/posts/default/1936294927741090195'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/posts/default/1936294927741090195'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author><thr:total>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.post-7201282142857276831</id><published>2022-07-02T20:54:00.012+07:00</published><updated>2022-07-02T22:47:34.079+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><title type='text'>Kaspersky Vpn Secure Connection Cheap</title><content type='html'>&lt;!-- this is for get link button --&gt;&lt;div id="main-getlink" class="text-center py-5 my-3 bg-light shadow"&gt;	&lt;button id='getlink' class='btn btn-success d-none rounded-0' disabled=''&gt;Get Link&lt;/button&gt;&lt;/div&gt;  &lt;p&gt;	This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, lists, tables, images, code, and more are all supported as expected. &lt;/p&gt; &lt;hr&gt; &lt;p&gt;	This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text. &lt;/p&gt; &lt;h2&gt;Blockquotes&lt;/h2&gt; &lt;p&gt;	This is an example blockquote in action: &lt;/p&gt; &lt;blockquote class="blockquote"&gt;	&lt;p&gt;		Quoted text goes here. 	&lt;/p&gt;&lt;/blockquote&gt; &lt;p&gt;	This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text. &lt;/p&gt; &lt;h3&gt;Example lists&lt;/h3&gt; &lt;p&gt;	This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout. This is an example unordered list: &lt;/p&gt; &lt;ul&gt;	&lt;li&gt;First list item&lt;/li&gt; 	&lt;li&gt;Second list item with a longer description&lt;/li&gt; 	&lt;li&gt;Third list item to close it out&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;	And this is an ordered list: &lt;/p&gt; &lt;ol&gt;	&lt;li&gt;First list item&lt;/li&gt; 	&lt;li&gt;Second list item with a longer description&lt;/li&gt; 	&lt;li&gt;Third list item to close it out&lt;/li&gt; &lt;/ol&gt; &lt;p&gt;	And this is a definition list: &lt;/p&gt; &lt;dl&gt;	&lt;dt&gt;HyperText Markup Language (HTML)&lt;/dt&gt; 	&lt;dd&gt;The language used to describe and define the content of a Web page&lt;/dd&gt; 	&lt;dt&gt;Cascading Style Sheets (CSS)&lt;/dt&gt; 	&lt;dd&gt;Used to describe the appearance of Web content&lt;/dd&gt; 	&lt;dt&gt;JavaScript (JS)&lt;/dt&gt; 	&lt;dd&gt;The programming language used to build advanced Web sites and applications&lt;/dd&gt; &lt;/dl&gt; &lt;h2&gt;Inline HTML elements&lt;/h2&gt; &lt;p&gt;	HTML defines a long list of available inline tags, a complete list of which can be found on the &lt;a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element"&gt;Mozilla Developer Network&lt;/a&gt;	. &lt;/p&gt; &lt;ul&gt;	&lt;li&gt;&lt;strong&gt;To bold text&lt;/strong&gt;		, use &lt;code class="language-plaintext highlighter-rouge"&gt;&amp;lt;strong&amp;gt;&lt;/code&gt;	.&lt;/li&gt; 	&lt;li&gt;&lt;em&gt;To italicize text&lt;/em&gt;		, use &lt;code class="language-plaintext highlighter-rouge"&gt;&amp;lt;em&amp;gt;&lt;/code&gt;	.&lt;/li&gt; 	&lt;li&gt;Abbreviations, like &lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt;		should use &lt;code class="language-plaintext highlighter-rouge"&gt;&amp;lt;abbr&amp;gt;&lt;/code&gt;		, with an optional &lt;code class="language-plaintext highlighter-rouge"&gt;title&lt;/code&gt;	attribute for the full phrase.&lt;/li&gt; 	&lt;li&gt;Citations, like &lt;cite&gt;— Mark Otto&lt;/cite&gt;		, should use &lt;code class="language-plaintext highlighter-rouge"&gt;&amp;lt;cite&amp;gt;&lt;/code&gt;	.&lt;/li&gt; 	&lt;li&gt;&lt;del&gt;Deleted&lt;/del&gt;		text should use &lt;code class="language-plaintext highlighter-rouge"&gt;&amp;lt;del&amp;gt;&lt;/code&gt;		and &lt;ins&gt;inserted&lt;/ins&gt;		text should use &lt;code class="language-plaintext highlighter-rouge"&gt;&amp;lt;ins&amp;gt;&lt;/code&gt;	.&lt;/li&gt; 	&lt;li&gt;Superscript &lt;sup&gt;text&lt;/sup&gt;		uses &lt;code class="language-plaintext highlighter-rouge"&gt;&amp;lt;sup&amp;gt;&lt;/code&gt;		and subscript &lt;sub&gt;text&lt;/sub&gt;		uses &lt;code class="language-plaintext highlighter-rouge"&gt;&amp;lt;sub&amp;gt;&lt;/code&gt;	.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;	Most of these elements are styled by browsers with few modifications on our part. &lt;/p&gt;  &lt;!-- this is for ads and go to link --&gt;&lt;div id="main-gotolink" class="text-center"&gt;	&lt;div class='ads-square'&gt;		ads here 	&lt;/div&gt;	&lt;div id="timer"&gt;&lt;/div&gt;	&lt;button id='gotolink' class='btn btn-success d-none rounded-0 my-1' disabled=''&gt;Go to Link&lt;/button&gt;	&lt;div class='ads-square'&gt;		ads here 	&lt;/div&gt;&lt;/div&gt; &lt;h2&gt;Heading&lt;/h2&gt; &lt;p&gt;	This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text. &lt;/p&gt; &lt;h3&gt;Sub-heading&lt;/h3&gt; &lt;p&gt;	This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text. &lt;/p&gt; &lt;pre&gt;&lt;code&gt;Example code block&lt;/code&gt;&lt;/pre&gt; &lt;p&gt;	This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout. &lt;/p&gt;</content><link rel='replies' type='application/atom+xml' href='https://safeplatinum.blogspot.com/feeds/7201282142857276831/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='https://safeplatinum.blogspot.com/2022/07/kaspersky-vpn-secure-connection-cheap.html#comment-form' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/posts/default/7201282142857276831'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/posts/default/7201282142857276831'/><link rel='alternate' type='text/html' href='https://safeplatinum.blogspot.com/2022/07/kaspersky-vpn-secure-connection-cheap.html' title='Kaspersky Vpn Secure Connection Cheap'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author><thr:total>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.post-8613533801349177536</id><published>2022-07-02T20:32:00.015+07:00</published><updated>2022-07-02T22:45:18.387+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><title type='text'>Forex is Invest of Future</title><content type='html'>&lt;!-- this is for get link button --&gt;&lt;div id="main-getlink" class="text-center py-5 my-3 bg-light shadow"&gt;	&lt;button id='getlink' class='btn btn-success d-none rounded-0' disabled=''&gt;Get Link&lt;/button&gt;&lt;/div&gt; &lt;p&gt;	utos are without a doubt genuine marvels of designing. In any case, with more vehicles on the streets now than any time in recent memory, it is vital that each of us knows about its effects on our surroundings. Whether you claim or lease an auto, whether you have a standard or extravagance auto, there are things you can do to spare cash and decrease vitality use, CO2 emanations and contamination.  &lt;/p&gt;  &lt;p&gt;	In the event that you think about an eco-accommodating drive as well, you'll be satisfied to hear there are a couple of basic ways you can have any kind of effect.  &lt;/p&gt; &lt;p&gt;	Moderate down continuously: Backing off bit by bit at Activity Lights is better for the earth as it diminishes fuel utilization. &lt;/p&gt;  &lt;p&gt;	Drive at a predictable velocity: Quickening and breaking hard will cut the proficiency of your drive by around 33%. That is on account of sudden halting and beginning requires more vitality. Attempt and keep up a general velocity to get the most out of your fuel. &lt;/p&gt; &lt;p&gt;	Use voyage control: Utilizing journey control on level landscape gives a 7% fuel saving money on a normal since it helps you keep up an enduring pace. Maintain a strategic distance from it on uneven streets however as this will bring about your motor to accelerate and back off. &lt;/p&gt; &lt;p&gt;	Administration your auto: Guaranteeing your fuel framework is working appropriately and your tires are expanded and adjusted to makers' details can guarantee fuel proficiency. &lt;/p&gt; &lt;p&gt;	Exchanging off the additional items: Aerating and cooling and radiators require colossal measure of force, which will cut your mileage. All things considered, driving with the windows open makes drag, so you have to discover a parity to keep up a comfortable temperature inside your auto. &lt;/p&gt; &lt;!-- this is for ads and go to link --&gt;&lt;div id="main-gotolink" class="text-center"&gt;	&lt;div class='ads-square'&gt;		ads here 	&lt;/div&gt;	&lt;div id="timer"&gt;&lt;/div&gt;	&lt;button id='gotolink' class='btn btn-success d-none rounded-0 my-1' disabled=''&gt;Go to Link&lt;/button&gt;	&lt;div class='ads-square'&gt;		ads here 	&lt;/div&gt;&lt;/div&gt; &lt;p&gt;	Change gears at lower revs: Over-revving squanders loads of fuel. In the event that you switch up somewhat prior this will decrease your revs. In case you're driving a diesel auto, we propose you intend to up-change a gear when the rev counter achieves 2000 rpm. For petrol autos, we recommend 2500 rpm. &lt;/p&gt; &lt;p&gt;	Arrangement your outing: The more straightforward your course and the less time you spend backing off to make sense of which approach to go, the more productive your drive will be. &lt;/p&gt; &lt;p&gt;	Close down: Switch off the motor on the off chance that you think you will be stationary for over two minutes. &lt;/p&gt; &lt;p&gt;	Lose the weight: Additional weight means additional fuel, so if there's pointless things in the boot you don't require on the adventure, take it out and store it at home. &lt;/p&gt;  &lt;p&gt;	These couple of straightforward little changes to your auto and driving procedures can be taken after on both claimed and leased cars.This would advance help you spare the earth as well as your cash as well.  &lt;/p&gt; &lt;p&gt;	Practice environmental awareness and Have any kind of effect to our surroundings!  &lt;/p&gt;</content><link rel='replies' type='application/atom+xml' href='https://safeplatinum.blogspot.com/feeds/8613533801349177536/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='https://safeplatinum.blogspot.com/2022/07/get-link-utos-are-without-doubt-genuine.html#comment-form' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/posts/default/8613533801349177536'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/posts/default/8613533801349177536'/><link rel='alternate' type='text/html' href='https://safeplatinum.blogspot.com/2022/07/get-link-utos-are-without-doubt-genuine.html' title='Forex is Invest of Future'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author><thr:total>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.page-8419652509049181409</id><published>2022-07-02T23:58:00.000+07:00</published><updated>2022-07-02T23:58:20.178+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#page'/><title type='text'>Terms and Conditions</title><content type='html'>&lt;p&gt;Welcome to &lt;strong&gt;this web&lt;/strong&gt;!&lt;/p&gt;&lt;br/&gt; &lt;p&gt;These terms and conditions outline the rules and regulations for the use of &lt;strong&gt;this web&lt;/strong&gt;'s Website, located at www.&lt;strong&gt;this web&lt;/strong&gt;.com.&lt;/p&gt;&lt;br/&gt; &lt;p&gt;By accessing this website we assume you accept these terms and conditions. Do not continue to use &lt;strong&gt;this web&lt;/strong&gt; if you do not agree to take all of the terms and conditions stated on this page.&lt;/p&gt;&lt;br/&gt; &lt;p&gt;The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all Agreements: "Client", "You" and "Your" refers to you, the person log on this website and compliant to the Company’s terms and conditions. "The Company", "Ourselves", "We", "Our" and "Us", refers to our Company. "Party", "Parties", or "Us", refers to both the Client and ourselves. All terms refer to the offer, acceptance and consideration of payment necessary to undertake the process of our assistance to the Client in the most appropriate manner for the express purpose of meeting the Client’s needs in respect of provision of the Company’s stated services, in accordance with and subject to, prevailing law of Netherlands. Any use of the above terminology or other words in the singular, plural, capitalization and/or he/she or they, are taken as interchangeable and therefore as referring to same.&lt;/p&gt;&lt;br/&gt; &lt;h3&gt;&lt;strong&gt;Cookies&lt;/strong&gt;&lt;/h3&gt; &lt;p&gt;We employ the use of cookies. By accessing &lt;strong&gt;this web&lt;/strong&gt;, you agreed to use cookies in agreement with the &lt;strong&gt;this web&lt;/strong&gt;'s Privacy Policy.&lt;/p&gt;&lt;br/&gt; &lt;p&gt;Most interactive websites use cookies to let us retrieve the user’s details for each visit. Cookies are used by our website to enable the functionality of certain areas to make it easier for people visiting our website. Some of our affiliate/advertising partners may also use cookies.&lt;/p&gt;&lt;br/&gt; &lt;h3&gt;&lt;strong&gt;License&lt;/strong&gt;&lt;/h3&gt; &lt;p&gt;Unless otherwise stated, &lt;strong&gt;this web&lt;/strong&gt; and/or its licensors own the intellectual property rights for all material on &lt;strong&gt;this web&lt;/strong&gt;. All intellectual property rights are reserved. You may access this from &lt;strong&gt;this web&lt;/strong&gt; for your own personal use subjected to restrictions set in these terms and conditions.&lt;/p&gt;&lt;br/&gt; &lt;p&gt;You must not:&lt;/p&gt;&lt;br/&gt;&lt;ul&gt;	&lt;li&gt;Republish material from &lt;strong&gt;this web&lt;/strong&gt;&lt;/li&gt;	&lt;li&gt;Sell, rent or sub-license material from &lt;strong&gt;this web&lt;/strong&gt;&lt;/li&gt;	&lt;li&gt;Reproduce, duplicate or copy material from &lt;strong&gt;this web&lt;/strong&gt;&lt;/li&gt;	&lt;li&gt;Redistribute content from &lt;strong&gt;this web&lt;/strong&gt;&lt;/li&gt;&lt;/ul&gt; &lt;p&gt;This Agreement shall begin on the date hereof.&lt;/p&gt;&lt;br/&gt; &lt;p&gt;Parts of this website offer an opportunity for users to post and exchange opinions and information in certain areas of the website. &lt;strong&gt;this web&lt;/strong&gt; does not filter, edit, publish or review Comments prior to their presence on the website. Comments do not reflect the views and opinions of &lt;strong&gt;this web&lt;/strong&gt;,its agents and/or affiliates. Comments reflect the views and opinions of the person who post their views and opinions. To the extent permitted by applicable laws, &lt;strong&gt;this web&lt;/strong&gt; shall not be liable for the Comments or for any liability, damages or expenses caused and/or suffered as a result of any use of and/or posting of and/or appearance of the Comments on this website.&lt;/p&gt;&lt;br/&gt; &lt;p&gt;&lt;strong&gt;this web&lt;/strong&gt; reserves the right to monitor all Comments and to remove any Comments which can be considered inappropriate, offensive or causes breach of these Terms and Conditions.&lt;/p&gt;&lt;br/&gt; &lt;p&gt;You warrant and represent that:&lt;/p&gt;&lt;br/&gt; &lt;ul&gt;	&lt;li&gt;You are entitled to post the Comments on our website and have all necessary licenses and consents to do so;&lt;/li&gt;	&lt;li&gt;The Comments do not invade any intellectual property right, including without limitation copyright, patent or trademark of any third party;&lt;/li&gt;	&lt;li&gt;The Comments do not contain any defamatory, libelous, offensive, indecent or otherwise unlawful material which is an invasion of privacy&lt;/li&gt;	&lt;li&gt;The Comments will not be used to solicit or promote business or custom or present commercial activities or unlawful activity.&lt;/li&gt;&lt;/ul&gt; &lt;p&gt;You hereby grant &lt;strong&gt;this web&lt;/strong&gt; a non-exclusive license to use, reproduce, edit and authorize others to use, reproduce and edit any of your Comments in any and all forms, formats or media.&lt;/p&gt;&lt;br/&gt; &lt;h3&gt;&lt;strong&gt;Hyperlinking to our Content&lt;/strong&gt;&lt;/h3&gt; &lt;p&gt;The following organizations may link to our Website without prior written approval:&lt;/p&gt;&lt;br/&gt; &lt;ul&gt;	&lt;li&gt;Government agencies;&lt;/li&gt;	&lt;li&gt;Search engines;&lt;/li&gt;	&lt;li&gt;News organizations;&lt;/li&gt;	&lt;li&gt;Online directory distributors may link to our Website in the same manner as they hyperlink to the Websites of other listed businesses; and&lt;/li&gt;	&lt;li&gt;System wide Accredited Businesses except soliciting non-profit organizations, charity shopping malls, and charity fundraising groups which may not hyperlink to our Web site.&lt;/li&gt;&lt;/ul&gt; &lt;p&gt;These organizations may link to our home page, to publications or to other Website information so long as the link: (a) is not in any way deceptive; (b) does not falsely imply sponsorship, endorsement or approval of the linking party and its products and/or services; and (c) fits within the context of the linking party’s site.&lt;/p&gt;&lt;br/&gt; &lt;p&gt;We may consider and approve other link requests from the following types of organizations:&lt;/p&gt;&lt;br/&gt; &lt;ul&gt;	&lt;li&gt;commonly-known consumer and/or business information sources;&lt;/li&gt;	&lt;li&gt;dot.com community sites;&lt;/li&gt;	&lt;li&gt;associations or other groups representing charities;&lt;/li&gt;	&lt;li&gt;online directory distributors;&lt;/li&gt;	&lt;li&gt;internet portals;&lt;/li&gt;	&lt;li&gt;accounting, law and consulting firms; and&lt;/li&gt;	&lt;li&gt;educational institutions and trade associations.&lt;/li&gt;&lt;/ul&gt; &lt;p&gt;We will approve link requests from these organizations if we decide that: (a) the link would not make us look unfavorably to ourselves or to our accredited businesses; (b) the organization does not have any negative records with us; (c) the benefit to us from the visibility of the hyperlink compensates the absence of &lt;strong&gt;this web&lt;/strong&gt;; and (d) the link is in the context of general resource information.&lt;/p&gt;&lt;br/&gt; &lt;p&gt;These organizations may link to our home page so long as the link: (a) is not in any way deceptive; (b) does not falsely imply sponsorship, endorsement or approval of the linking party and its products or services; and (c) fits within the context of the linking party’s site.&lt;/p&gt;&lt;br/&gt; &lt;p&gt;If you are one of the organizations listed in paragraph 2 above and are interested in linking to our website, you must inform us by sending an e-mail to &lt;strong&gt;this web&lt;/strong&gt;. Please include your name, your organization name, contact information as well as the URL of your site, a list of any URLs from which you intend to link to our Website, and a list of the URLs on our site to which you would like to link. Wait 2-3 weeks for a response.&lt;/p&gt;&lt;br/&gt; &lt;p&gt;Approved organizations may hyperlink to our Website as follows:&lt;/p&gt;&lt;br/&gt; &lt;ul&gt;	&lt;li&gt;By use of our corporate name; or&lt;/li&gt;	&lt;li&gt;By use of the uniform resource locator being linked to; or&lt;/li&gt;	&lt;li&gt;By use of any other description of our Website being linked to that makes sense within the context and format of content on the linking party’s site.&lt;/li&gt;&lt;/ul&gt; &lt;p&gt;No use of &lt;strong&gt;this web&lt;/strong&gt;'s logo or other artwork will be allowed for linking absent a trademark license agreement.&lt;/p&gt;&lt;br/&gt; &lt;h3&gt;&lt;strong&gt;iFrames&lt;/strong&gt;&lt;/h3&gt; &lt;p&gt;Without prior approval and written permission, you may not create frames around our Webpages that alter in any way the visual presentation or appearance of our Website.&lt;/p&gt;&lt;br/&gt; &lt;h3&gt;&lt;strong&gt;Content Liability&lt;/strong&gt;&lt;/h3&gt; &lt;p&gt;We shall not be hold responsible for any content that appears on your Website. You agree to protect and defend us against all claims that is rising on your Website. No link(s) should appear on any Website that may be interpreted as libelous, obscene or criminal, or which infringes, otherwise violates, or advocates the infringement or other violation of, any third party rights.&lt;/p&gt;&lt;br/&gt; &lt;h3&gt;&lt;strong&gt;Reservation of Rights&lt;/strong&gt;&lt;/h3&gt; &lt;p&gt;We reserve the right to request that you remove all links or any particular link to our Website. You approve to immediately remove all links to our Website upon request. We also reserve the right to amen these terms and conditions and it’s linking policy at any time. By continuously linking to our Website, you agree to be bound to and follow these linking terms and conditions.&lt;/p&gt;&lt;br/&gt; &lt;h3&gt;&lt;strong&gt;Removal of links from our website&lt;/strong&gt;&lt;/h3&gt; &lt;p&gt;If you find any link on our Website that is offensive for any reason, you are free to contact and inform us any moment. We will consider requests to remove links but we are not obligated to or so or to respond to you directly.&lt;/p&gt;&lt;br/&gt; &lt;p&gt;We do not ensure that the information on this website is correct, we do not warrant its completeness or accuracy; nor do we promise to ensure that the website remains available or that the material on the website is kept up to date.&lt;/p&gt;&lt;br/&gt; &lt;h3&gt;&lt;strong&gt;Disclaimer&lt;/strong&gt;&lt;/h3&gt; &lt;p&gt;To the maximum extent permitted by applicable law, we exclude all representations, warranties and conditions relating to our website and the use of this website. Nothing in this disclaimer will:&lt;/p&gt;&lt;br/&gt; &lt;ul&gt;	&lt;li&gt;limit or exclude our or your liability for death or personal injury;&lt;/li&gt;	&lt;li&gt;limit or exclude our or your liability for fraud or fraudulent misrepresentation;&lt;/li&gt;	&lt;li&gt;limit any of our or your liabilities in any way that is not permitted under applicable law; or&lt;/li&gt;	&lt;li&gt;exclude any of our or your liabilities that may not be excluded under applicable law.&lt;/li&gt;&lt;/ul&gt; &lt;p&gt;The limitations and prohibitions of liability set in this Section and elsewhere in this disclaimer: (a) are subject to the preceding paragraph; and (b) govern all liabilities arising under the disclaimer, including liabilities arising in contract, in tort and for breach of statutory duty.&lt;/p&gt;&lt;br/&gt; &lt;p&gt;As long as the website and the information and services on the website are provided free of charge, we will not be liable for any loss or damage of any nature.&lt;/p&gt;</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/pages/default/8419652509049181409'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/pages/default/8419652509049181409'/><link rel='alternate' type='text/html' href='http://safeplatinum.blogspot.com/p/terms-and-conditions.html' title='Terms and Conditions'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.page-4858526422275444464</id><published>2022-07-02T23:55:00.002+07:00</published><updated>2022-07-02T23:55:38.363+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#page'/><title type='text'>Site Issue Report</title><content type='html'>&lt;p&gt;	Thank you for visiting this page. Previously I as the owner apologize if you experience a problem while using this website. For mutual convenience, please state your input regarding problems encountered while accessing this website.  	&lt;a data-bs-toggle="modal" data-bs-target="#modalContact" href="javascript:;"&gt;Contact Me&lt;/a&gt;&lt;/p&gt; &lt;p&gt;Did you not find the article you are looking for (url error 404) or is the website display problematic? Please contact us and we will immediately fix the problem you are experiencing.&lt;/p&gt;</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/pages/default/4858526422275444464'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/pages/default/4858526422275444464'/><link rel='alternate' type='text/html' href='http://safeplatinum.blogspot.com/p/site-issue-report.html' title='Site Issue Report'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.page-7933860274618073716</id><published>2022-07-02T23:41:00.002+07:00</published><updated>2022-07-02T23:42:57.191+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#page'/><title type='text'>Disclaimers</title><content type='html'>&lt;h2&gt;	Welcome to the Disclaimers page. &lt;/h2&gt; &lt;p&gt;There are several things that you must understand about all the information contained on this site. All information on this site is published in good faith with the intention of presenting general information that is useful for visitors to this site. &lt;strong&gt;this web&lt;/strong&gt; does not guarantee the completeness, reliability and accuracy of all information contained on this site.&lt;/p&gt;&lt;br/&gt; &lt;p&gt;Every action you take on the information that you find on the expert websiteweb.id is your responsibility. &lt;strong&gt;this web&lt;/strong&gt; is not responsible for all risks, consequences and losses resulting from the use of information contained on this site.&lt;/p&gt;&lt;br/&gt; &lt;p&gt;When you use this website you might find an external hyperlink linking to another website. When we include hyperlinks, we ensure that the site is a quality website, both content and ethically. However, we cannot guarantee that the site will remain the same in the future because we have no control over the contents of the site.&lt;/p&gt;&lt;br/&gt; &lt;p&gt;By using this site, you agree to the Warnings, Rules and Conditions specified by &lt;strong&gt;this web&lt;/strong&gt;.&lt;/p&gt;</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/pages/default/7933860274618073716'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/pages/default/7933860274618073716'/><link rel='alternate' type='text/html' href='http://safeplatinum.blogspot.com/p/welcome-to-disclaimers-page.html' title='Disclaimers'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry><entry><id>tag:blogger.com,1999:blog-2572754653896115362.page-225901037041030665</id><published>2022-07-02T23:42:00.002+07:00</published><updated>2022-07-02T23:42:39.729+07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#page'/><title type='text'>Privacy Policy</title><content type='html'>&lt;p&gt;At &lt;strong&gt;this web&lt;/strong&gt;, the privacy of our visitors is very important to us. This privacy policy document outlines the types of personal information that is received and collected by expertweb.id and how it is used.&lt;/p&gt;&lt;br/&gt; &lt;h2&gt;Site Cookies&lt;/h2&gt;&lt;p&gt;We use cookies on our site. If you don't know what cookies are, or how to control or delete them, then we recommend that you Visit: aboutcookies.org for a more detailed guide.&lt;/p&gt;&lt;br/&gt; &lt;p&gt;We currently operate a 'implied agreement' policy which means that we assume you are happy with this use. If you are not happy, then you should not access this site, or you should delete the cookie website expertweb.id after visiting this site, or you should browse the site using your browser's anonymous usage settings (called "Incognito / guest" in Chrome, "InPrivate "For Internet Explorer," Private Browsing "in Firefox and Safari, etc.).&lt;/p&gt;&lt;br/&gt; &lt;p&gt;&lt;strong&gt;this web&lt;/strong&gt; does not use cookies through Blogger-based markup from this site, or on posts and website pages. However, third-party vendors whose advertisements are placed on this site may use cookies or web beacons. Details from this vendor are provided below.&lt;/p&gt;&lt;br/&gt; &lt;h2&gt;Third Party and Advertiser Cookies&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;this web&lt;/strong&gt; has no access to or control over cookies!&lt;/p&gt;&lt;br/&gt; &lt;h2&gt;Google Analytics&lt;/h2&gt;&lt;p&gt;We use this to understand how the site is used to improve user experience. Data users are all anonymous.&lt;/p&gt;&lt;br/&gt; &lt;p&gt;You can find out more about Google's position on privacy in terms of analysis services available at http://www.google.co.uk/intl/en/analytics/privacyoverview.html&lt;/p&gt;&lt;br/&gt; &lt;h2&gt;Google Adsense&lt;/h2&gt;&lt;p&gt;This cookie is used by Google to report to us how advertisements are displayed on the expert website on performance. Data users are all anonymous.&lt;/p&gt;&lt;br/&gt; &lt;p&gt;You can find out more about Google and its policies and principles in terms of advertising at http://www.google.com/policies/privacy/ads/&lt;/p&gt;&lt;br/&gt; &lt;p&gt;Such is the explanation of the policy set at &lt;strong&gt;this web&lt;/strong&gt;.&lt;/p&gt;</content><link rel='edit' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/pages/default/225901037041030665'/><link rel='self' type='application/atom+xml' href='https://www.blogger.com/feeds/2572754653896115362/pages/default/225901037041030665'/><link rel='alternate' type='text/html' href='http://safeplatinum.blogspot.com/p/privacy-policy.html' title='Privacy Policy'/><author><name>Riedayme</name><uri>https://www.blogger.com/profile/06842964811765796933</uri><email>noreply@blogger.com</email><gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='32' height='32' src='//2.bp.blogspot.com/-4fJRtABkhvw/X3moqzwjK1I/AAAAAAAABN0/3O7rqR0qsykjOpMpN4JNDOmKvqt8y5P4QCK4BGAYYCw/s32-p-k-no-nu/riedayme-logo-only.png'/></author></entry></feed>

@@ -1,0 +1,903 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:css='false' b:defaultwidgetversion='2' b:js='true' b:layoutsVersion='3' b:responsive='true' b:templateUrl='SafePlatinum.xml' b:templateVersion='1.0' class='h-100' expr:dir='data:blog.languageDirection' expr:lang='data:blog.locale' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+
+	<b:comment>Always remove Inject attribute with b:attr</b:comment>
+	<b:attr name='xmlns' value=''/>
+	<b:attr name='xmlns:b' value=''/>
+	<b:attr name='xmlns:expr' value=''/>
+	<b:attr name='xmlns:data' value=''/>	
+	&lt;!--<head>--&gt;&lt;head&gt;
+
+	<b:comment>Browser Data</b:comment>
+	<meta expr:charset='data:blog.encoding'/>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+	<meta content='width=device-width, initial-scale=1.0' name='viewport'/>
+	<b:comment>Favicon</b:comment>
+	<link expr:href='data:blog.blogspotFaviconUrl' rel='icon' type='image/x-icon'/>
+	<b:if cond='data:widgets'>
+		<b:comment>Browser Mobile Navbar Color</b:comment>
+		<meta expr:content='data:skin.vars.mainColor' name='theme-color'/>
+		<meta expr:content='data:skin.vars.mainColor' name='msapplication-navbutton-color'/>
+	</b:if>
+
+	<b:comment>SEO Title</b:comment>
+	<b:if cond='data:view.isHomepage'>
+		<b:comment>Homepage</b:comment>
+		<title><data:blog.title.escaped/></title>
+		<b:elseif cond='data:view.isSingleItem'/>
+		<b:comment>Post / Pages</b:comment>
+		<title><data:blog.pageName.escaped/></title>			
+		<b:elseif cond='data:view.isSearch'/>
+		<b:if cond='data:view.search.query'>
+			<b:comment>Search Query</b:comment>
+			<title><data:blog.pageName.escaped/></title>
+			<b:elseif cond='data:view.search.label'/>
+			<b:comment>Search Label</b:comment>
+			<title><data:blog.pageName.escaped/></title>
+			<b:else/>
+			<b:comment>Search Index</b:comment>
+			<title><data:blog.title.escaped/></title>
+		</b:if>
+		<b:elseif cond='data:view.isArchive'/>
+		<b:comment>Archive</b:comment>
+		<title><data:blog.pageName.escaped/></title>
+		<b:elseif cond='data:view.isError'/>
+		<b:comment>404</b:comment>
+		<title> 404 | Page Not Found </title> 
+	</b:if>
+
+	<b:comment>SEO Description</b:comment>
+	<b:if cond='data:blog.metaDescription'>
+		<meta expr:content='data:blog.metaDescription' name='description'/>
+	</b:if>
+
+	<b:comment>Canonical URL</b:comment>
+	<b:if cond='data:view.isSearch AND not data:view.search.query AND not data:view.search.label'>
+		<b:comment>Canonical for Pagination Homepage</b:comment>
+		<link expr:href='data:blog.canonicalHomepageUrl' rel='canonical'/>
+		<b:else/>
+		<link expr:href='data:blog.url.canonical' rel='canonical'/>
+	</b:if>
+
+	<b:comment>Block SE Robots on Page [Search Query / Label, Archive]</b:comment>
+	<b:if cond='data:view.search.query OR data:view.search.label OR data:view.isArchive'>
+		<meta content='noindex,nofollow' name='robots'/>
+	</b:if>		
+
+	<b:comment>Blog Feeds</b:comment>
+	<data:blog.feedLinks/>
+
+	<b:comment>Meta OpenGraph</b:comment>
+	<b:include name='openGraphMetaData'/>
+
+	<b:comment>Blog restricted Age</b:comment>
+	<b:if cond='data:blog.adultContent'>
+		<meta content='adult' name='rating'/>
+	</b:if>
+
+	<b:comment>CSS External</b:comment>
+	<b:include name='cssx'/>
+
+	<b:skin><![CDATA[ 
+		/*
+		<Group description="Main">
+			<Variable name="mainColor" description="MainColor" type="color" default="#FFFFFF" hideEditor="false"  value="#FFFFFF"/>
+		</Group>
+		*/
+		
+	]]></b:skin>
+	<b:if cond='data:view.isLayoutMode'>
+		<b:template-skin>
+			<![CDATA[
+			body#layout {min-width:768px;padding:100px 20px 0 !important;}
+			body#layout .hidden, body#layout .invisible {display: inherit;}
+			body#layout::before {
+			content: "SafePlatinum";
+			position: absolute;
+			top: 20px;
+			right: 27px;
+			padding: 14px 22px;
+			font-family: monospace;
+			font-size: 18px;
+			color: #3f51b5;
+			background: #c8e7ff;
+			border-radius: 2px 4px;
+			border: 1px solid #3f51b5;
+			}
+			]]>
+		</b:template-skin>
+	</b:if>
+
+	<b:comment>CSS Internal</b:comment>
+	<style type='text/css'>
+	</style>
+
+	<b:comment>Google Analytics</b:comment>
+	<b:include data='blog' name='google-analytics'/>	
+
+	&lt;!--</head>--&gt;&lt;/head&gt;
+	<body class='d-flex flex-column h-100'>
+
+		<main class='d-flex flex-column h-100'>
+
+			<b:comment>banner download</b:comment>
+			<b:section id='WidgetTop' showaddelement='false'>
+<b:widget id='HTML1' locked='true' title='Banner Download' type='HTML' version='2' visible='true'>
+  <b:widget-settings>
+    <b:widget-setting name='content'>&lt;div class=&quot;d-flex bg-warning text-dark fw-bold py-2 text-center justify-content-center&quot;&gt;	
+								&lt;a target=&quot;_blank&quot; rel=&quot;nofollow noopener&quot; class=&quot;text-decoration-none text-dark&quot; href=&quot;https://github.com/kurteyki/SafePlatinum&quot;&gt;
+									&lt;i class=&quot;bi bi-github&quot;&gt;&lt;/i&gt; Download this Safelink
+								&lt;/a&gt;
+								&amp;nbsp; or &amp;nbsp;
+								&lt;a target=&quot;_blank&quot; rel=&quot;nofollow noopener&quot; class=&quot;text-decoration-none text-primary&quot; href=&quot;https://t.me/kurteyki&quot;&gt;
+									&lt;i class=&quot;bi bi-telegram&quot;&gt;&lt;/i&gt; Join Telegram
+								&lt;/a&gt;
+							&lt;/div&gt;</b:widget-setting>
+  </b:widget-settings>
+  <b:includable id='main'>
+						<data:content/>
+					</b:includable>
+</b:widget>
+<b:widget id='PageList1' locked='true' title='PageList' type='PageList' version='2' visible='true'>
+  <b:widget-settings>
+    <b:widget-setting name='pageListJson'><![CDATA[{"4858526422275444464":{"href":"https://safeplatinum.blogspot.com/p/site-issue-report.html","position":4,"title":"Site Issue Report"},"link0":{"href":"https://safeplatinum.blogspot.com/","position":0,"title":"Home"},"8419652509049181409":{"href":"https://safeplatinum.blogspot.com/p/terms-and-conditions.html","position":3,"title":"TOS"},"225901037041030665":{"href":"https://safeplatinum.blogspot.com/p/privacy-policy.html","position":1,"title":"Privacy Policy"},"7933860274618073716":{"href":"https://safeplatinum.blogspot.com/p/welcome-to-disclaimers-page.html","position":2,"title":"Disclaimers"}}]]></b:widget-setting>
+    <b:widget-setting name='homeTitle'>Home</b:widget-setting>
+  </b:widget-settings>
+  <b:includable id='main'>
+
+						<nav class='py-2 bg-light border-bottom'>
+							<div class='container d-flex justify-content-center'>
+								<ul class='nav'>							
+									<b:loop values='data:links' var='link'>
+										<li class='nav-item'>
+											<a class='nav-link link-dark px-2' expr:href='data:link.href'><data:link.title/></a>
+										</li>
+									</b:loop>
+
+									<li class='nav-item'>
+										<a class='nav-link link-dark px-2' data-bs-target='#autosafelink' data-bs-toggle='modal' href='javascript:;'>Auto Safelink</a>
+									</li>
+								</ul>
+							</div>
+						</nav>
+
+						<!-- modal autosafelink -->
+						<div aria-hidden='true' aria-labelledby='autosafelinkLabel' class='modal fade' id='autosafelink' tabindex='-1'>
+							<div class='modal-dialog modal-dialog-centered'>
+								<div class='modal-content'>
+									<div class='modal-header'>
+										<h5 class='modal-title' id='autosafelinkLabel'>Auto Safelink Script</h5>
+										<button aria-label='Close' class='btn-close' data-bs-dismiss='modal' type='button'/>
+									</div>
+									<div class='modal-body'>
+										<p>
+											Insert this script for you main Blog
+										</p>
+
+										<div class='my-4 border p-3'>
+											<pre><code class='user-select-all' id='autosafelinkCode'/></pre>
+											</div>
+
+											<p class='alert alert-info'>
+												script will replace all link from your main blog go to this safelink
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</b:includable>
+  <b:includable id='content'/>
+  <b:includable id='overflowButton'/>
+  <b:includable id='overflowablePageList'/>
+  <b:includable id='pageLink'/>
+  <b:includable id='pageList'/>
+</b:widget>
+</b:section>
+
+				<b:comment>main homepage</b:comment>
+				<b:if cond='data:view.isHomepage'>
+
+					<section class='container d-flex flex-column h-100'>
+						<div class='row justify-content-center my-auto'>
+							<div class='col-12 col-md-7'>
+								<div class='card shadow-sm'>
+									<div class='card-header border-0 bg-white p-3 text-center'>
+										<h1 class='fs-2 mb-0'>
+											<data:blog.title/>
+										</h1>
+										<b:if cond='data:blog.metaDescription'>
+											<p class='m-0'><data:blog.metaDescription/></p>
+										</b:if>
+									</div>
+									<div class='card-body pt-0'>
+										<form id='form-safelink'>
+											<div class='input-group mb-3'>
+												<span class='input-group-text'>
+													<i class='bi bi-globe'/>
+												</span>
+
+												<input class='form-control' expr:placeholder='data:blog.homepageUrl' name='url' required='' type='url'/>
+
+												<span class='input-group-text p-0'>
+													<button class='btn btn-primary rounded-0' type='submit'>
+														<i class='fa fa-shield'>
+														</i>
+														<strong>Generate</strong>
+													</button>
+												</span>
+											</div>
+											<div id='result-safelink'/>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>								
+					</section>
+
+				</b:if>		
+
+				<b:comment>main single</b:comment>
+				<b:if cond='data:view.isSingleItem OR data:view.isLayoutMode'>
+					<b:section id='BlogWidget' showaddelement='true'>
+<b:widget cond='data:view.isPost' id='HTML2' locked='true' title='Ads Top' type='HTML' version='2' visible='true'>
+  <b:widget-settings>
+    <b:widget-setting name='content'>ads here</b:widget-setting>
+  </b:widget-settings>
+  <b:includable id='main'>
+								<section class='container mt-3'>
+									<div class='row justify-content-center'>
+										<div class='col-12 col-md-7'>
+											<div class='ads-horizontal'>
+												<data:content/>
+											</div>
+										</div>
+									</div>
+								</section>
+							</b:includable>
+</b:widget>
+<b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog' version='2' visible='true'>
+  <b:widget-settings>
+    <b:widget-setting name='showDateHeader'>false</b:widget-setting>
+    <b:widget-setting name='commentLabel'>Comment</b:widget-setting>
+    <b:widget-setting name='style.textcolor'>#ffffff</b:widget-setting>
+    <b:widget-setting name='showShareButtons'>true</b:widget-setting>
+    <b:widget-setting name='authorLabel'>Oleh</b:widget-setting>
+    <b:widget-setting name='showCommentLink'>true</b:widget-setting>
+    <b:widget-setting name='style.urlcolor'>#ffffff</b:widget-setting>
+    <b:widget-setting name='showAuthor'>true</b:widget-setting>
+    <b:widget-setting name='style.linkcolor'>#ffffff</b:widget-setting>
+    <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
+    <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
+    <b:widget-setting name='reactionsLabel'/>
+    <b:widget-setting name='showAuthorProfile'>true</b:widget-setting>
+    <b:widget-setting name='style.layout'>1x1</b:widget-setting>
+    <b:widget-setting name='showLabels'>true</b:widget-setting>
+    <b:widget-setting name='showLocation'>false</b:widget-setting>
+    <b:widget-setting name='postLabelsLabel'>Labels :</b:widget-setting>
+    <b:widget-setting name='showTimestamp'>true</b:widget-setting>
+    <b:widget-setting name='postsPerAd'>1</b:widget-setting>
+    <b:widget-setting name='showBacklinks'>false</b:widget-setting>
+    <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
+    <b:widget-setting name='showInlineAds'>true</b:widget-setting>
+    <b:widget-setting name='showReactions'>false</b:widget-setting>
+  </b:widget-settings>
+  <b:includable id='main' var='this'>
+
+								<section class='container d-flex flex-column h-100 my-3'>
+									<div class='row justify-content-center my-auto'>
+										<div class='col-12 col-md-7'>
+											<b:loop index='x' values='data:posts' var='post'>
+												<h1 class='fs-2'><data:post.title/></h1>
+												<b:if cond='data:view.isPost'>
+													<div class='mb-3'>
+														<b:if cond='data:this.allBylineItems.author'>
+															<data:this.allBylineItems.author.label/>
+															<data:post.author.name/>
+														</b:if>
+														&#183;
+														<b:if cond='data:this.allBylineItems.timestamp'>
+															<data:this.allBylineItems.timestamp.label/> <data:post.date/>
+														</b:if>
+													</div>
+												</b:if>
+												<article>
+													<data:post.body/>
+												</article>
+											</b:loop>
+										</div>
+									</div>
+								</section>
+
+							</b:includable>
+  <b:includable id='aboutPostAuthor'>
+  <div class='author-name'>
+    <a class='g-profile' expr:href='data:post.author.profileUrl' rel='author' title='author profile'>
+      <span>
+        <data:post.author.name/>
+      </span>
+    </a>
+  </div>
+  <div>
+    <span class='author-desc'>
+      <data:post.author.aboutMe/>
+    </span>
+  </div>
+</b:includable>
+  <b:includable id='addComments'>
+  <a expr:href='data:post.commentsUrl' expr:onclick='data:post.commentsUrlOnclick'>
+    <b:message name='messages.postAComment'/>
+  </a>
+</b:includable>
+  <b:includable id='commentAuthorAvatar'>
+  <div class='avatar-image-container'>
+    <img class='author-avatar' expr:src='data:comment.authorAvatarSrc' height='35' width='35'/>
+  </div>
+</b:includable>
+  <b:includable id='commentDeleteIcon' var='comment'>
+  <span expr:class='&quot;item-control &quot; + data:comment.adminClass'>
+    <b:if cond='data:showCmtPopup'>
+      <div class='goog-toggle-button'>
+        <div class='goog-inline-block comment-action-icon'/>
+      </div>
+    <b:else/>
+      <a class='comment-delete' expr:href='data:comment.deleteUrl' expr:title='data:messages.deleteComment'>
+        <img src='https://resources.blogblog.com/img/icon_delete13.gif'/>
+      </a>
+    </b:if>
+  </span>
+</b:includable>
+  <b:includable id='commentForm' var='post'>
+  <div class='comment-form'>
+    <a name='comment-form'/>
+    <h4 id='comment-post-message'><data:messages.postAComment/></h4>
+    <b:if cond='data:this.messages.blogComment != &quot;&quot;'>
+      <p><data:this.messages.blogComment/></p>
+    </b:if>
+    <b:include data='post' name='commentFormIframeSrc'/>
+    <iframe allowtransparency='allowtransparency' class='blogger-iframe-colorize blogger-comment-from-post' expr:height='data:cmtIframeInitialHeight ?: &quot;90px&quot;' frameborder='0' id='comment-editor' name='comment-editor' src='' width='100%'/>
+    <data:post.cmtfpIframe/>
+    <script type='text/javascript'>
+      BLOG_CMT_createIframe(&#39;<data:post.appRpcRelayPath/>&#39;);
+    </script>
+  </div>
+</b:includable>
+  <b:includable id='commentFormIframeSrc' var='post'>
+  <a expr:href='data:post.commentFormIframeSrc' id='comment-editor-src'/>
+</b:includable>
+  <b:includable id='commentItem' var='comment'>
+  <div class='comment' expr:id='&quot;c&quot; + data:comment.id'>
+    <b:include cond='data:blog.enabledCommentProfileImages' name='commentAuthorAvatar'/>
+
+    <div class='comment-block'>
+      <div class='comment-author'>
+        <b:if cond='data:comment.authorUrl'>
+          <b:message name='messages.authorSaidWithLink'>
+            <b:param expr:value='data:comment.author' name='authorName'/>
+            <b:param expr:value='data:comment.authorUrl' name='authorUrl'/>
+          </b:message>
+        <b:else/>
+          <b:message name='messages.authorSaid'>
+            <b:param expr:value='data:comment.author' name='authorName'/>
+          </b:message>
+        </b:if>
+      </div>
+      <div expr:class='&quot;comment-body&quot; + (data:comment.isDeleted ? &quot; deleted&quot; : &quot;&quot;)'>
+        <data:comment.body/>
+      </div>
+      <div class='comment-footer'>
+        <span class='comment-timestamp'>
+          <a expr:href='data:comment.url' title='comment permalink'>
+            <data:comment.timestamp/>
+          </a>
+          <b:include data='comment' name='commentDeleteIcon'/>
+        </span>
+      </div>
+    </div>
+  </div>
+</b:includable>
+  <b:includable id='commentList' var='comments'>
+  <div id='comments-block'>
+    <b:loop values='data:comments' var='comment'>
+      <b:include data='comment' name='commentItem'/>
+    </b:loop>
+  </div>
+</b:includable>
+  <b:includable id='commentPicker' var='post'>
+  <b:if cond='data:post.showThreadedComments'>
+    <b:include data='post' name='threadedComments'/>
+  <b:else/>
+    <b:include data='post' name='comments'/>
+  </b:if>
+</b:includable>
+  <b:includable id='comments' var='post'>
+  <section expr:class='&quot;comments&quot; + (data:post.embedCommentForm ? &quot; embed&quot; : &quot;&quot;)' expr:data-num-comments='data:post.numberOfComments' id='comments'>
+    <a name='comments'/>
+    <b:if cond='data:post.allowComments'>
+
+      <b:include name='commentsTitle'/>
+
+      <div expr:id='data:widget.instanceId + &quot;_comments-block-wrapper&quot;'>
+        <b:include cond='data:post.comments' data='post.comments' name='commentList'/>
+      </div>
+
+      <b:if cond='data:post.commentPagingRequired'>
+        <div class='paging-control-container'>
+          <b:if cond='data:post.hasOlderLinks'>
+            <a expr:class='data:post.oldLinkClass' expr:href='data:post.oldestLinkUrl'>
+              <data:messages.oldest/>
+            </a>
+            <a expr:class='data:post.oldLinkClass' expr:href='data:post.olderLinkUrl'>
+              <data:messages.older/>
+            </a>
+          </b:if>
+
+          <span class='comment-range-text'>
+            <data:post.commentRangeText/>
+          </span>
+
+          <b:if cond='data:post.hasNewerLinks'>
+            <a expr:class='data:post.newLinkClass' expr:href='data:post.newerLinkUrl'>
+              <data:messages.newer/>
+            </a>
+            <a expr:class='data:post.newLinkClass' expr:href='data:post.newestLinkUrl'>
+              <data:messages.newest/>
+            </a>
+          </b:if>
+        </div>
+      </b:if>
+
+      <div class='footer'>
+        <b:if cond='data:post.embedCommentForm'>
+          <b:if cond='data:post.allowNewComments'>
+            <b:include data='post' name='commentForm'/>
+          <b:else/>
+            <data:post.noNewCommentsText/>
+          </b:if>
+        <b:else/>
+          <b:if cond='data:post.allowComments'>
+            <b:include data='post' name='addComments'/>
+          </b:if>
+        </b:if>
+      </div>
+    </b:if>
+    <b:if cond='data:showCmtPopup'>
+      <div id='comment-popup'>
+        <iframe allowtransparency='allowtransparency' frameborder='0' id='comment-actions' name='comment-actions' scrolling='no'>
+        </iframe>
+      </div>
+    </b:if>
+  </section>
+</b:includable>
+  <b:includable id='commentsTitle'>
+  <h3 class='title'><data:messages.comments/></h3>
+</b:includable>
+  <b:includable id='feedLinks'>
+  <b:if cond='!data:view.isPost'> <!-- Blog feed links -->
+    <b:if cond='data:feedLinks'>
+      <div class='blog-feeds'>
+        <b:include data='feedLinks' name='feedLinksBody'/>
+      </div>
+    </b:if>
+  <b:else/> <!--Post feed links -->
+    <div class='post-feeds'>
+      <b:loop values='data:posts' var='post'>
+        <b:if cond='data:post.allowComments and data:post.feedLinks'>
+          <b:include data='post.feedLinks' name='feedLinksBody'/>
+        </b:if>
+      </b:loop>
+    </div>
+  </b:if>
+</b:includable>
+  <b:includable id='feedLinksBody' var='links'>
+  <div class='feed-links'>
+  <data:messages.subscribeTo/>
+  <b:loop values='data:links' var='f'>
+     <a class='feed-link' expr:href='data:f.url' expr:type='data:f.mimeType' target='_blank'><data:f.name/> (<data:f.feedType/>)</a>
+  </b:loop>
+  </div>
+</b:includable>
+  <b:includable id='homePageLink'>
+  <a class='home-link' expr:href='data:blog.homepageUrl'>
+    <data:messages.home/>
+  </a>
+</b:includable>
+  <b:includable id='iframeComments' var='post'>
+  <!-- G+ comments, no longer available. The includable is retained for backwards-compatibility. -->
+</b:includable>
+  <b:includable id='inlineAd' var='post'>
+  <b:if cond='!data:view.isPreview'>
+    <b:if cond='data:this.adCode or data:this.adClientId or data:blog.adsenseClientId'>
+      <!-- Ad -->
+      <div class='inline-ad'>
+        <b:if cond='data:this.adCode != &quot;&quot;'>
+          <data:this.adCode/>
+        <b:else/>
+          <b:include cond='data:this.adClientId or data:blog.adsenseClientId' name='defaultAdUnit'/>
+        </b:if>
+      </div>
+    </b:if>
+  <b:else/>
+    <div class='inline-ad'>
+      <div class='inline-ad-placeholder'>
+        <span><b:message name='messages.adsGoHere'/></span>
+      </div>
+    </div>
+  </b:if>
+</b:includable>
+  <b:includable id='nextPageLink'>
+  <a class='blog-pager-older-link' expr:href='data:olderPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-older-link&quot;' expr:title='data:messages.olderPosts'>
+    <data:messages.olderPosts/>
+  </a>
+</b:includable>
+  <b:includable id='post' var='post'>
+  <div class='post'>
+    <b:include data='post' name='postMeta'/>
+    <b:include data='post' name='postTitle'/>
+    <b:include name='headerByline'/>
+    <b:if cond='data:view.isSingleItem'>
+      <b:include data='post' name='postBody'/>
+    <b:else/>
+      <b:include data='post' name='postBodySnippet'/>
+      <b:include data='post' name='postJumpLink'/>
+    </b:if>
+    <b:include data='post' name='postFooter'/>
+  </div>
+</b:includable>
+  <b:includable id='postBody' var='post'>
+  <!-- If metaDescription is empty, use the post body as the schema.org description too, for G+/FB snippeting. -->
+  <div class='post-body entry-content float-container' expr:id='&quot;post-body-&quot; + data:post.id'>
+    <data:post.body/>
+  </div>
+</b:includable>
+  <b:includable id='postBodySnippet' var='post'>
+  <b:include data='post' name='postBody'/>
+</b:includable>
+  <b:includable id='postCommentsAndAd' var='post'>
+  <article class='post-outer-container'>
+    <!-- Post title and body -->
+    <div class='post-outer'>
+      <b:include data='post' name='post'/>
+    </div>
+
+    <!-- Comments -->
+    <b:include cond='data:view.isSingleItem' data='post' name='commentPicker'/>
+
+    <!-- Show ad inside post container, after comments, if single item. -->
+    <b:include cond='data:view.isSingleItem and data:post.includeAd' data='post' name='inlineAd'/>
+  </article>
+
+  <!-- Show ad outside post container (between posts) for feed pages. -->
+  <b:include cond='data:view.isMultipleItems and data:post.includeAd' data='post' name='inlineAd'/>
+</b:includable>
+  <b:includable id='postCommentsLink'>
+  <b:if cond='data:view.isMultipleItems'>
+    <span class='byline post-comment-link container'>
+      <b:include cond='data:post.commentSource != 1' name='commentsLink'/>
+    </span>
+  </b:if>
+</b:includable>
+  <b:includable id='postFooter' var='post'>
+  <div class='post-footer'>
+    <b:include name='footerBylines'/>
+    <b:include data='post' name='postFooterAuthorProfile'/>
+  </div>
+</b:includable>
+  <b:includable id='postFooterAuthorProfile' var='post'>
+  <b:if cond='data:post.author.aboutMe and data:view.isPost'>
+    <div class='author-profile'>
+      <b:if cond='data:post.author.authorPhoto.url'>
+        <img class='author-image' expr:src='data:post.author.authorPhoto.url' width='50px'/>
+        <div class='author-about'>
+          <b:include data='post' name='aboutPostAuthor'/>
+        </div>
+      <b:else/>
+        <b:include data='post' name='aboutPostAuthor'/>
+      </b:if>
+    </div>
+  </b:if>
+</b:includable>
+  <b:includable id='postHeader' var='post'>
+  <b:include name='headerByline'/>
+</b:includable>
+  <b:includable id='postMeta' var='post'>
+  <b:include data='post' name='postMetadataJSON'/>
+</b:includable>
+  <b:includable id='postPagination'>
+  <div class='blog-pager container' id='blog-pager'>
+    <b:include cond='data:newerPageUrl' name='previousPageLink'/>
+    <b:include cond='data:olderPageUrl' name='nextPageLink'/>
+    <b:include cond='data:view.url != data:blog.homepageUrl' name='homePageLink'/>
+  </div>
+</b:includable>
+  <b:includable id='postTitle' var='post'>
+  <a expr:name='data:post.id'/>
+  <b:if cond='data:post.title != &quot;&quot;'>
+    <h3 class='post-title entry-title'>
+      <b:if cond='data:post.link or (data:post.url and data:view.url != data:post.url)'>
+        <a expr:href='data:post.link ?: data:post.url'><data:post.title/></a>
+      <b:else/>
+        <data:post.title/>
+      </b:if>
+    </h3>
+  </b:if>
+</b:includable>
+  <b:includable id='previousPageLink'>
+  <a class='blog-pager-newer-link' expr:href='data:newerPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-newer-link&quot;' expr:title='data:messages.newerPosts'>
+    <data:messages.newerPosts/>
+  </a>
+</b:includable>
+  <b:includable id='threadedCommentForm' var='post'>
+  <div class='comment-form'>
+    <a name='comment-form'/>
+    <h4 id='comment-post-message'><data:messages.postAComment/></h4>
+    <b:if cond='data:this.messages.blogComment != &quot;&quot;'>
+      <p><data:this.messages.blogComment/></p>
+    </b:if>
+    <b:include data='post' name='commentFormIframeSrc'/>
+    <iframe allowtransparency='allowtransparency' class='blogger-iframe-colorize blogger-comment-from-post' expr:height='data:cmtIframeInitialHeight ?: &quot;90px&quot;' frameborder='0' id='comment-editor' name='comment-editor' src='' width='100%'/>
+    <data:post.cmtfpIframe/>
+    <script type='text/javascript'>
+      BLOG_CMT_createIframe(&#39;<data:post.appRpcRelayPath/>&#39;);
+    </script>
+  </div>
+</b:includable>
+  <b:includable id='threadedCommentJs' var='post'>
+  <script async='async' expr:src='data:post.commentSrc' type='text/javascript'/>
+  <b:template-script inline='true' name='threaded_comments'/>
+  <script type='text/javascript'>
+    blogger.widgets.blog.initThreadedComments(
+        <data:post.commentJso/>,
+        <data:post.commentMsgs/>,
+        <data:post.commentConfig/>);
+  </script>
+</b:includable>
+  <b:includable id='threadedComments' var='post'>
+  <section class='comments threaded' expr:data-embed='data:post.embedCommentForm' expr:data-num-comments='data:post.numberOfComments' id='comments'>
+    <a name='comments'/>
+
+    <b:include name='commentsTitle'/>
+
+    <div class='comments-content'>
+      <b:if cond='data:post.embedCommentForm'>
+        <b:include data='post' name='threadedCommentJs'/>
+      </b:if>
+      <div id='comment-holder'>
+         <data:post.commentHtml/>
+      </div>
+    </div>
+
+    <p class='comment-footer'>
+      <b:if cond='data:post.allowNewComments'>
+        <b:include data='post' name='threadedCommentForm'/>
+      <b:else/>
+        <data:post.noNewCommentsText/>
+      </b:if>
+      <b:if cond='data:post.showManageComments'>
+        <b:include data='post' name='manageComments'/>
+      </b:if>
+    </p>
+
+    <b:if cond='data:showCmtPopup'>
+      <div id='comment-popup'>
+        <iframe allowtransparency='allowtransparency' frameborder='0' id='comment-actions' name='comment-actions' scrolling='no'>
+        </iframe>
+      </div>
+    </b:if>
+  </section>
+</b:includable>
+</b:widget>
+<b:widget cond='data:view.isPost' id='HTML3' locked='true' title='Ads Bottom' type='HTML' version='2' visible='true'>
+  <b:widget-settings>
+    <b:widget-setting name='content'>ads here</b:widget-setting>
+  </b:widget-settings>
+  <b:includable id='main'>
+								<section class='container mb-3'>
+									<div class='row justify-content-center'>
+										<div class='col-12 col-md-7'>
+											<div class='ads-horizontal'>
+												<data:content/>
+											</div>
+										</div>
+									</div>
+								</section>
+							</b:includable>
+</b:widget>
+<b:widget cond='data:view.isPage' id='ContactForm1' locked='true' title='Contact' type='ContactForm' version='2' visible='true'>
+  <b:includable id='main'>
+
+								<div aria-hidden='true' aria-labelledby='modalContactTitle' class='modal fade' id='modalContact' tabindex='-1'>
+									<div class='modal-dialog modal-sm modal-dialog-centered'>
+										<div class='modal-content'>
+											<div class='modal-header'>
+												<strong class='modal-title text-dark' id='modalContactTitle'>
+													<data:title/>
+												</strong>
+												<button aria-label='Close' class='btn-close' data-bs-dismiss='modal' type='button'/>
+											</div>
+											<div class='modal-body'>
+
+												<form name='contact-form'>  
+
+													<div class='mb-3'>
+														<input class='form-control contact-form-name' expr:id='data:widget.instanceId + &quot;_contact-form-name&quot;' expr:placeholder='data:contactFormNameMsg' name='name' type='text'/>
+													</div>
+
+													<div class='mb-3'>
+														<input class='form-control contact-form-email' expr:id='data:widget.instanceId + &quot;_contact-form-email&quot;' expr:placeholder='data:contactFormEmailMsg' name='email' type='email'/>
+													</div>
+
+													<div class='mb-3'>
+														<textarea class='form-control contact-form-email-message' cols='25' expr:id='data:widget.instanceId + &quot;_contact-form-email-message&quot;' expr:placeholder='data:contactFormMessageMsg' name='email-message' rows='5'/>
+													</div>
+
+													<input class='btn btn-outline-primary contact-form-button contact-form-button-submit' expr:id='data:widget.instanceId + &quot;_contact-form-submit&quot;' expr:value='data:contactFormSendMsg' type='button'/>  
+
+													<div class='mt-2 text-danger'>
+														<div class='contact-form-error-message' expr:id='data:widget.instanceId + &quot;_contact-form-error-message&quot;'/>
+														<div class='contact-form-success-message' expr:id='data:widget.instanceId + &quot;_contact-form-success-message&quot;'/>
+													</div>
+
+												</form>
+
+											</div>											
+										</div>
+									</div>
+								</div>
+							</b:includable>
+  <b:includable id='content'/>
+</b:widget>
+</b:section>
+				</b:if>
+
+				<b:comment>main archive, search, error</b:comment>
+				<b:if cond='data:view.isArchive OR data:view.isSearch OR data:view.isError'>
+					<!-- redirect to home -->
+					<section class='container d-flex flex-column h-100'>
+						<div class='row justify-content-center my-auto'>
+							<div class='col-12 col-md-7 text-center'>
+								<p class='fs-2 fw-bold'>This page not use On Safelink :)</p>
+								<a class='text-decoration-none fw-bold' expr:href='data:blog.homepageUrl'>Back to Home</a>
+							</div>
+						</div>
+					</section>
+				</b:if>
+
+				<b:comment>credit</b:comment>
+				<b:section id='WidgetBottom' showaddelement='false'>
+<b:widget id='Text1' locked='true' title='Credit' type='Text' version='2' visible='true'>
+  <b:widget-settings>
+    <b:widget-setting name='content'>2022</b:widget-setting>
+  </b:widget-settings>
+  <b:includable id='main'>
+							<footer class='text-center mb-3'>				
+								<p class='m-0'>
+									Copyright &#169;<data:content/> <a class='text-decoration-none text-dark' expr:href='data:blog.homepageUrl'><data:blog.title/></a>
+								</p>
+								<small>
+									<data:messages.poweredByBlogger/> &#183; <a class='text-decoration-none fw-bold' href='https://github.com/kurteyki/SafePlatinum' rel='nofollow noopener' target='_blank'>
+									<i class='bi bi-layout-text-window-reverse'/> by irfan.ycd (v2.0)
+								</a> 
+							</small>
+						</footer>	
+					</b:includable>
+</b:widget>
+<b:widget id='HTML4' locked='true' title='Configuration' type='HTML' version='2' visible='true'>
+  <b:widget-settings>
+    <b:widget-setting name='content'>const safeLinkConfig = {
+	secretKey: &#39;rahasia:v&#39;,
+	parameterName: &#39;f&#39;,
+	countDownTimer: 8
+};</b:widget-setting>
+  </b:widget-settings>
+  <b:includable id='main'>
+						<script>
+							/* safeLink config */
+							<data:content/>
+						</script>
+					</b:includable>
+</b:widget>
+<b:widget id='HTML5' locked='true' title='HTML Script' type='HTML' version='2' visible='true'>
+  <b:widget-settings>
+    <b:widget-setting name='content'><![CDATA[<!-- insert you ads script here -->]]></b:widget-setting>
+  </b:widget-settings>
+  <b:includable id='main'>
+						<data:content/>
+					</b:includable>
+</b:widget>
+</b:section>		
+
+			<b:comment>noScript</b:comment>
+			<noscript>
+				<style>
+					.noscript {
+					position: fixed;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					background: rgb(0 0 0 / 50%);
+					z-index: 999;
+					}
+
+					/* remove safelink */
+					#main-getlink, #main-gotolink{display: none}
+				</style>
+				<div class='noscript d-flex flex-column h-100'>
+					<div class='card m-auto'>
+						<div class='card-body p-5 text-center'>
+							<strong class='fs-3 mb-3'>
+								Javascript has Disable, Please Enable !
+							</strong>
+							<p>
+								This web run use javascript for work perfectly, please enable javascript
+							</p>
+						</div>
+					</div>
+				</div>
+			</noscript>
+
+		</main>
+
+		<b:comment>JS External</b:comment>
+		<b:include name='jsx'/>
+
+		<b:comment>JS Internal</b:comment>
+		<script>
+			const blogId = &quot;<data:blog.blogId/>&quot;;
+			//<![CDATA[    
+			/* for autoSafelinkCode */
+			$("#autosafelink").on("shown.bs.modal", function(){
+				$("#autosafelinkCode").text(`<script>const autoSafeLink = {
+	linkException: 'blogger.com,facebook.com,instagram.com,google.com,twitter.com,javascript:;,mailto:',
+	onlyThisLink: '', // when this value is empty, will replace all link and ignore exception
+	safeLinkConfig: {
+		blogId: '${blogId}',
+		secretKey: '${safeLinkConfig.secretKey}',
+		parameterName : '${safeLinkConfig.parameterName}'
+	}
+}; 	
+</scr${'i'}pt>
+<script src="https://cdn.jsdelivr.net/gh/kurteyki/SafePlatinum@da631c2cde4849cc0c40fa90c7b02c2e072f6daf/autosafelink.js"></scr${'i'}pt>`);
+			})
+			//]]>			
+		</script>	
+
+		<b:comment>JS Homepage</b:comment>
+		<b:include cond='data:view.isHomepage' name='jsh'/>			
+
+		<b:comment>JS Post</b:comment>
+		<b:include cond='data:view.isPost' name='jsp'/>				
+
+		<b:comment>Define Default Code Here</b:comment>
+		<b:defaultmarkups>
+			<b:defaultmarkup type='Common'>
+				<b:includable id='cssx'>
+					<b:comment>insert css external here</b:comment>
+					<link crossorigin='anonymous' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0-beta1/css/bootstrap.min.css' integrity='sha512-o/MhoRPVLExxZjCFVBsm17Pkztkzmh7Dp8k7/3JrtNCHh0AQ489kwpfA3dPSHzKDe8YCuEhxXq3Y71eb/o6amg==' referrerpolicy='no-referrer' rel='stylesheet'/>
+					<link crossorigin='anonymous' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.3/font/bootstrap-icons.min.css' integrity='sha512-YzwGgFdO1NQw1CZkPoGyRkEnUTxPSbGWXvGiXrWk8IeSqdyci0dEDYdLLjMxq1zCoU0QBa4kHAFiRhUL3z2bow==' referrerpolicy='no-referrer' rel='stylesheet'/>
+
+					<link href='https://cdn.jsdelivr.net/gh/kurteyki/SafePlatinum@da631c2cde4849cc0c40fa90c7b02c2e072f6daf/app.css' rel='stylesheet'/>
+				</b:includable>
+				<b:includable id='jsx'>
+					<b:comment>insert js external here</b:comment>	
+					<script crossorigin='anonymous' integrity='sha512-Hqe3s+yLpqaBbXM6VA0cnj/T56ii5YjNrMT9v+us11Q81L0wzUG0jEMNECtugqNu2Uq5MSttCg0p4KK0kCPVaQ==' referrerpolicy='no-referrer' src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0-beta1/js/bootstrap.min.js'/>	
+					<script crossorigin='anonymous' integrity='sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==' referrerpolicy='no-referrer' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'/>		
+					<script crossorigin='anonymous' integrity='sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA==' referrerpolicy='no-referrer' src='https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js'/>
+
+					<script src='https://cdn.jsdelivr.net/gh/kurteyki/SafePlatinum@da631c2cde4849cc0c40fa90c7b02c2e072f6daf/app.js'/>
+
+				</b:includable>	
+				<b:includable id='jsh'>		
+					<script src='https://cdn.jsdelivr.net/gh/kurteyki/SafePlatinum@da631c2cde4849cc0c40fa90c7b02c2e072f6daf/app-h.js'/>
+				</b:includable>
+				<b:includable id='jsp'>	
+					<script src='https://cdn.jsdelivr.net/gh/kurteyki/SafePlatinum@da631c2cde4849cc0c40fa90c7b02c2e072f6daf/app-p.js'/>				
+				</b:includable>				
+			</b:defaultmarkup>			
+		</b:defaultmarkups>			
+
+	</body> <!-- // break
+-->	
+</html>

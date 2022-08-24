@@ -9,6 +9,21 @@ Protect your link easy
 - Ads Slot
 - Logic (Click and Load countDown)
 
+## How to Install
+- Open Blogger.com
+- Click Theme Navigation
+- Click Edit HTML Button
+- Copy Code on Template.xml file
+- Paste to Edit HTMl
+- Save
+
+## Easy Install + Content
+- Open Blogger.com
+- Click Settings Navigation
+- Go to Manage Blog
+- Click Import Content
+- Import File with name *blog-xx-xx-xxxx.xml* On Folder Backup
+
 ## Build With
 - Bootstrap 5
 - jQuery 3
